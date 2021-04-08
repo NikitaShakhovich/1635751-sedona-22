@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>City of Sedona</title>
+    <link type="text/css" href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -14,22 +15,22 @@
           <ul class="nav__list">
             <li class="nav__item">
               <!--            на главной убрать ссылку-->
-              <a href="index.html">
+              <a class="nav__link" href="index.html">
                 Главная
               </a>
             </li>
             <li class="nav__item">
-              <a href="catalog.html">
+              <a class="nav__link" href="catalog.html">
                 Фото и видео
               </a>
             </li>
             <li class="nav__item">
-              <a href="form.html">
+              <a class="nav__link" href="form.html">
                 Форма отзыва
               </a>
             </li>
             <li class="nav__item">
-              <a href="#">
+              <a class="nav__link" href="#">
                 Html academy
               </a>
             </li>
@@ -45,6 +46,7 @@
     <main class="page-main">
       <section class="reason">
         <div class="reason__container">
+          <div class="reason__container reason__container--image"></div>
           <header class="reason__header">
             <h2 class="visually-hidden">Достоинства города Седона</h2>
             <h3 class="reason__slogan">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h3>
@@ -52,9 +54,11 @@
           </header>
           <ul class="reason__list">
             <li class="reason__item">
-              <h3 class="reason__slogan">НАСТОЯЩИЙ ГОРОДОК</h3>
-              <p class="reason__number">— №1 —</p>
-              <p class="reason__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+              <div class="reason__container reason__container--color">
+                <h3 class="reason__slogan">НАСТОЯЩИЙ ГОРОДОК</h3>
+                <p class="reason__number">— №1 —</p>
+                <p class="reason__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+              </div>
               <img class="reason__image" src="img/city.jpg" width="520" height="260" alt="город Седона">
               <ul class="advantages">
                 <li class="advantages__item">
@@ -72,22 +76,24 @@
               </ul>
             </li>
             <li class="reason__item">
-              <h3 class="reason__slogan">ТАМ ЕСТЬ Мост дьявола</h3>
-              <p class="reason__number">— №2 —</p>
-              <p class="reason__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              <div class="reason__container reason__container--color">
+                <h3 class="reason__slogan">ТАМ ЕСТЬ Мост дьявола</h3>
+                <p class="reason__number">— №2 —</p>
+                <p class="reason__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              </div>
               <img class="reason__image" src="img/bridge.jpg" width="520" height="260" alt="город Седона">
             </li>
-            <li class="reason__item">
+            <li class="reason__item reason__item--color">
               <h3 class="reason__slogan">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
               <p class="reason__number">— №3 —</p>
               <p class="reason__description">ВСЕ интересные места находятся очень близко</p>
             </li>
-            <li class="reason__item">
+            <li class="reason__item reason__item--color">
               <h3 class="reason__slogan">КРАСИВАЯ ДОРОГА</h3>
               <p class="reason__number">— №4 —</p>
               <p class="reason__description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
             </li>
-            <li class="reason__item">
+            <li class="reason__item reason__item--color">
               <h3 class="reason__slogan">МАЛО ТУРИСТОВ</h3>
               <p class="reason__number">— №5 —</p>
               <p class="reason__description">Большинство едет в гранд каньон и толпится там</p>
@@ -105,7 +111,7 @@
       <section class="map">
         <h3 class="visually-hidden">Седона на карте</h3>
         <div class="map__container">
-    <!--     тут будет карта-->
+         тут будет карта
         </div>
       </section>
     </main>
