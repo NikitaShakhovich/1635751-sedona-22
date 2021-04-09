@@ -1,37 +1,36 @@
 .feedback {
+}
+.feedback__container {
+  //margin: 0 auto;
+  padding: 0 10px;
+  width: 320px;
+  //outline: 5px solid red;
+  //outline-offset: -5px;
 
-  &__container {
-    //margin: 0 auto;
-    padding: 0 10px;
+  &--image {
+    background-image: url("../../img/back-desktop.jpg");
     width: 320px;
-    outline: 5px solid red;
-    outline-offset: -5px;
-
-    &--image {
-      background-image: url("../../img/back-desktop.jpg");
-      width: 320px;
-      height: 214px;
-      padding: 0;
-      outline: none;
-    }
+    height: 214px;
+    padding: 0;
+    outline: none;
   }
-  &__title {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 26px;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 0;
-    padding: 25px 0 25px;
-  }
-  &__description {
-    color: $darkgrey;
-    text-transform: uppercase;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 26px;
-    text-align: center;
-    margin: 0;
-    padding: 0 0 25px;
-  }
+}
+.feedback__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 25px 0 25px;
+}
+.feedback__description {
+  color: $darkgrey;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 25px;
 }
