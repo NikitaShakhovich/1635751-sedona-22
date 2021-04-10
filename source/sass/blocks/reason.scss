@@ -1,10 +1,9 @@
-.reason {
-}
 .reason__list {
   margin: 0;
   list-style: none;
   padding: 0;
 }
+
 .reason__container {
   padding: 0 10px;
   //margin: 0 auto;
@@ -26,6 +25,7 @@
     outline: none;
   }
 }
+
 .reason__slogan {
   font-weight: bold;
   font-size: 18px;
@@ -35,6 +35,7 @@
   margin: 0;
   padding: 25px 0 25px;
 }
+
 .reason__description {
   color: $darkgrey;
   text-transform: uppercase;
@@ -45,6 +46,7 @@
   margin: 0;
   padding: 0 0 25px;
 }
+
 .reason__number {
   color: $darkgrey;
   text-transform: uppercase;
@@ -55,6 +57,7 @@
   margin: 0;
   padding: 0 0 25px;
 }
+
 .reason__item {
   &--color {
     background-color: $grey;
