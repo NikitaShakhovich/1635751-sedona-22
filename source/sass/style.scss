@@ -1,4 +1,5 @@
 // global
+@import "../../node_modules/normalize.css/normalize";
 @import "global/variables.scss";
 @import "global/global.scss";
 @import "global/fonts.scss";
@@ -7,10 +8,12 @@
 // blocks
 @import "blocks/page.scss";
 @import "blocks/nav.scss";
+@import "blocks/button.scss";
 @import "blocks/reason.scss";
 @import "blocks/hotel-search.scss";
 @import "blocks/advantages.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/social.scss";
 @import "blocks/map.scss";
-@import "blocks/button.scss";
+@import "blocks/feedback.scss";
+@import "blocks/comment.scss";

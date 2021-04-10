@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>City of Sedona</title>
+    <link type="text/css" href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -13,22 +14,22 @@
         <div class="nav__container">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="index.html">
+              <a class="nav__link" href="index.html">
                 Главная
               </a>
             </li>
             <li class="nav__item">
-              <a href="catalog.html">
+              <a class="nav__link" href="catalog.html">
                 Фото и видео
               </a>
             </li>
             <li class="nav__item">
-              <a href="form.html">
+              <a class="nav__link" href="form.html">
                 Форма отзыва
               </a>
             </li>
             <li class="nav__item">
-              <a href="#">
+              <a class="nav__link" href="#">
                 Html academy
               </a>
             </li>
@@ -43,6 +44,7 @@
     <main class="page-main">
       <section class="feedback">
         <div class="feedback__container">
+          <div class="feedback__container feedback__container--image"></div>
           <header class="feedback__header">
             <h3 class="feedback__title">Оставьте свой отзыв</h3>
             <p class="feedback__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
@@ -52,11 +54,11 @@
               <legend class="comment__title">Представьтесь:</legend>
               <ul class="comment__list">
                 <li class="comment__item">
-                  <label class="comment__label" for="username">Имя:</label>
+                  <label class="comment__label" for="username">Имя*:</label>
                   <input class="comment__input" id="username" name="username" type="text" placeholder="Петр">
                 </li>
                 <li class="comment__item">
-                  <label class="comment__label" for="secondname">Фамилия:</label>
+                  <label class="comment__label" for="secondname">Фамилия*:</label>
                   <input class="comment__input" id="secondname" name="secondname" type="text" placeholder="Иванов">
                 </li>
                 <li class="comment__item">
@@ -67,8 +69,8 @@
             </fieldset>
             <fieldset class="comment__block">
               <legend class="comment__title">Контактная информация:</legend>
-              <ul class="comment__item">
-                <li class="contact-info__item">
+              <ul class="comment__list">
+                <li class="comment__item">
                   <label class="comment__label" for="telephone">Контактный телефон*:</label>
                   <input class="comment__input comment__input--telephone" id="telephone" name="telephone" type="text" placeholder="Введите телефон">
                 </li>
@@ -95,7 +97,7 @@
                 </li>
                 <li class="comment__item">
                   <label class="comment__label comment__label--bold">
-                    <<input class="comment__input-radio" type="radio" name="общее впечатление: Затрудняюсь ответить">
+                    <input class="comment__input-radio" type="radio" name="общее впечатление: Затрудняюсь ответить">
                     Затрудняюсь ответить
                   </label>
                 </li>
@@ -132,7 +134,7 @@
             </fieldset>
             <fieldset class="comment__block">
               <legend class="comment__title">Опишите свои эмоции:</legend>
-              <textarea class="comment__input" name="comment" rows="5" cols="33" placeholder="Опишите подробно все свои восторги"></textarea>
+              <textarea class="comment__input" name="comment" rows="5" cols="27" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
             <button type="submit" class="comment__button button">Отправить отзыв</button>
           </form>
