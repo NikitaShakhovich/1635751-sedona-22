@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <title>City of Sedona</title>
+    <link type="text/css" href="css/normalize.css" rel="stylesheet">
+    <link type="text/css" href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -13,22 +15,22 @@
         <div class="nav__container">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="index.html">
+              <a class="nav__link" href="index.html">
                 Главная
               </a>
             </li>
             <li class="nav__item">
-              <a href="catalog.html">
+              <a class="nav__link" href="catalog.html">
                 Фото и видео
               </a>
             </li>
             <li class="nav__item">
-              <a href="form.html">
+              <a class="nav__link" href="form.html">
                 Форма отзыва
               </a>
             </li>
             <li class="nav__item">
-              <a href="#">
+              <a class="nav__link" href="#">
                 Html academy
               </a>
             </li>
@@ -43,6 +45,7 @@
     <main class="page-main">
       <section class="gallery">
         <div class="gallery__container">
+          <div class="gallery__container gallery__container--image"></div>
           <header class="gallery__header">
             <h3 class="gallery__slogan">Фото и видео</h3>
             <p class="gallery__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
@@ -96,7 +99,6 @@
         </div>
       </section>
       <section class="video-block">
-        <span class="visually-hidden">Видеопрезентация</span>
         <div class="video-block__container">
           <header class="video-block__header">
             <h3 class="video-block__slogan">Все еще сомневаетесь?</h3>
