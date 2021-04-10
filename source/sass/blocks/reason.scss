@@ -1,0 +1,65 @@
+.reason__list {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.reason__container {
+  padding: 0 10px;
+  //margin: 0 auto;
+  width: 320px;
+  //outline: 5px solid rgba(255, 0, 0, 0.3);
+  //outline-offset: -5px;
+
+  &--image {
+    background-image: url("../../img/back-mobile.jpg");
+    width: 320px;
+    height: 389px;
+    padding: 0;
+    outline: none;
+  }
+
+  &--color {
+    background-color: $paleblue;
+    padding: 0;
+    outline: none;
+  }
+}
+
+.reason__slogan {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 25px 0 25px;
+}
+
+.reason__description {
+  color: $darkgrey;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 25px;
+}
+
+.reason__number {
+  color: $darkgrey;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 25px;
+}
+
+.reason__item {
+  &--color {
+    background-color: $grey;
+  }
+}
