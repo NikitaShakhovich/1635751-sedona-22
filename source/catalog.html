@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8">
     <title>City of Sedona</title>
-    <link type="text/css" href="css/normalize.css" rel="stylesheet">
     <link type="text/css" href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
@@ -53,46 +52,50 @@
           <ul class="gallery__list">
             <li class="gallery__item">
               <a class="gallery__link" href="#">
-                <img src="img/photo-1-mobile.jpg" width="280" height="280" alt="неродные просторы">
+                <img class="gallery__photo" src="img/photo-1-mobile.jpg" width="280" height="280" alt="неродные просторы">
               </a>
               <div class="gallery__information-photo">
                 <p class="gallery__photo-name">Неродные просторы</p>
                 <p class="gallery__photo-writer">Автор фото: Борис</p>
-                <a class="gallery__photo-like"></a>
-                <p class="gallery__photo-liked">1350</p>
+                <div class="gallery__photo-like"> like
+                  <span class="gallery__photo-liked">1350</span>
+                </div>
               </div>
             </li>
             <li class="gallery__item">
               <a class="gallery__link" href="#">
-                <img src="img/photo-2-mobile.jpg" width="280" height="280" alt="Местная растительность">
+                <img class="gallery__photo" src="img/photo-2-mobile.jpg" width="280" height="280" alt="Местная растительность">
               </a>
               <div class="gallery__information-photo">
                 <p class="gallery__photo-name">Местная растительность</p>
                 <p class="gallery__photo-writer">Автор фото: Сергей</p>
-                <a class="gallery__photo-like"></a>
-                <p class="gallery__photo-liked">143</p>
+                <div class="gallery__photo-like">like
+                  <span class="gallery__photo-liked">143</span>
+                </div>
               </div>
             </li>
             <li class="gallery__item">
               <a class="gallery__link" href="#">
-                <img src="img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога на север">
+                <img class="gallery__photo" src="img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога на север">
               </a>
               <div class="gallery__information-photo">
                 <p class="gallery__photo-name">Дорога на север</p>
                 <p class="gallery__photo-writer">Автор фото: Петр</p>
-                <a class="gallery__photo-like"></a>
-                <p class="gallery__photo-liked">96</p>
+                <div class="gallery__photo-like">like
+                  <span class="gallery__photo-liked">96</span>
+                </div>
               </div>
             </li>
             <li class="gallery__item">
               <a class="gallery__link" href="#">
-                <img src="img/photo-4-mobile.jpg" width="280" height="280" alt="Мост дьявола">
+                <img class="gallery__photo" src="img/photo-4-mobile.jpg" width="280" height="280" alt="Мост дьявола">
               </a>
               <div class="gallery__information-photo">
                 <p class="gallery__photo-name">Мост дьявола</p>
                 <p class="gallery__photo-writer">Автор фото: Антон</p>
-                <a class="gallery__photo-like"></a>
-                <p class="gallery__photo-liked">254</p>
+                <div class="gallery__photo-like">like
+                  <span class="gallery__photo-liked">254</span>
+                </div>
               </div>
             </li>
           </ul>
@@ -105,6 +108,14 @@
             <p class="video-block__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           </header>
           <img class="video-block__image" src="img/video-mobile.jpg" width="320" height="201" alt="Видео">
+          <div class="video-block__range">
+            <div class="video-block__scale"></div>
+          </div>
+          <div class="video-block__menu">
+            <div class="video-block__menu-repeat"></div>
+            <div class="video-block__menu-titre"></div>
+            <div class="video-block__menu-screen"></div>
+          </div>
         </div>
       </section>
     </main>

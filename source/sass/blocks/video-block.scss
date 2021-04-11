@@ -1,0 +1,47 @@
+.video-block__container {
+  //margin: 0 auto;
+  padding: 0 10px;
+  width: 320px;
+}
+
+.video-block__slogan {
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+.video-block__description {
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: center;
+  color: $darkgrey;
+}
+
+.video-block__range {
+  height: 23px;
+  width: 236px;
+  padding-top: 22px;
+  padding-left: 22px;
+  padding-right: 22px;
+  background-color: $black;
+  opacity: 0.6;
+}
+
+.video-block__scale {
+  width: 100%;
+  height: 3px;
+  background-color: $white;
+  opacity: 0.2;
+}
+
+.video-block__menu {
+  width: 280px;
+  height: 66px;
+  background-color: $greyinput;
+  margin: 0;
+  padding: 0;
+}

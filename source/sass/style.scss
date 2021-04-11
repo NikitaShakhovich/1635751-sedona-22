@@ -1,4 +1,5 @@
 // global
+@import "../../node_modules/normalize.css/normalize";
 @import "global/variables.scss";
 @import "global/global.scss";
 @import "global/fonts.scss";
@@ -17,3 +18,4 @@
 @import "blocks/feedback.scss";
 @import "blocks/comment.scss";
 @import "blocks/gallery.scss";
+@import "blocks/video-block.scss";
