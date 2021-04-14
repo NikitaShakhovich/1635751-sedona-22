@@ -1,3 +1,7 @@
+.reason__header {
+  padding: 0 19px;
+}
+
 .reason__list {
   margin: 0;
   list-style: none;
@@ -5,7 +9,6 @@
 }
 
 .reason__container {
-  padding: 0 10px;
   //margin: 0 auto;
   width: 320px;
   //outline: 5px solid rgba(255, 0, 0, 0.3);
@@ -21,8 +24,9 @@
 
   &--color {
     background-color: $paleblue;
-    padding: 0;
+    padding: 0 19px;
     outline: none;
+    box-sizing: border-box;
   }
 }
 
@@ -34,6 +38,10 @@
   text-transform: uppercase;
   margin: 0;
   padding: 25px 0 25px;
+
+  &--border {
+    border-top: 1px solid $li-border;
+  }
 }
 
 .reason__description {
@@ -61,5 +69,6 @@
 .reason__item {
   &--color {
     background-color: $grey;
+    padding: 0 19px;
   }
 }
