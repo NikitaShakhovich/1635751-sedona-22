@@ -44,7 +44,9 @@
     <main class="page-main">
       <section class="feedback">
         <div class="feedback__container">
-          <div class="feedback__container feedback__container--image"></div>
+          <div class="feedback__container feedback__container--image">
+            <img class="feedback__banner" src="img/icon/text-form.svg" width="229" height="39" alt="Добро пожаловать в Седону">
+          </div>
           <header class="feedback__header">
             <h3 class="feedback__title">Оставьте свой отзыв</h3>
             <p class="feedback__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
@@ -134,9 +136,11 @@
             </fieldset>
             <fieldset class="comment__block">
               <legend class="comment__title">Опишите свои эмоции:</legend>
-              <textarea class="comment__input" name="comment" rows="5" cols="27" placeholder="Опишите подробно все свои восторги"></textarea>
+              <textarea class="comment__input" name="comment" rows="5" cols="25" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
-            <button type="submit" class="comment__button button">Отправить отзыв</button>
+            <div class="comment__container">
+              <button type="submit" class="comment__button button">Отправить отзыв</button>
+            </div>
           </form>
         </div>
       </section>
