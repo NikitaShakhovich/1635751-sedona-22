@@ -1,8 +1,21 @@
 .page-footer__container {
-  //margin: 0 auto;
+  margin: 0 auto;
   width: 320px;
   //outline: 5px solid rgba(255, 0, 255, 0.3);
   //outline-offset: -5px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }
 
 .page-footer__title {
@@ -13,9 +26,19 @@
   text-align: center;
   margin: 0;
   padding: 40px 19px 0 19px;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px;
+    margin: 0;
+  }
 }
 
 .page-footer__copyright {
   text-align: center;
   padding: 30px 19px 20px 19px;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px;
+    margin: 0;
+  }
 }
