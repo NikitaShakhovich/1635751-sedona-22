@@ -1,0 +1,14 @@
+.page-header__logo {
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    height: 56px;
+  }
+}
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}

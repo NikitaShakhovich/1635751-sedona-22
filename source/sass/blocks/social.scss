@@ -3,4 +3,13 @@
   padding: 30px 19px 0 19px;
   margin: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin: 0;
+  }
 }
