@@ -39,23 +39,26 @@
   }
 
   &--image {
-    background-image: url("../../img/back-mobile.jpg");
+    background-image: url("../../img/back-index-mobile.jpg");
     width: 320px;
     height: 389px;
     padding: 0;
+    background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
-      background-image: url("../../img/back-tablet.jpg");
+      background-image: url("../../img/back-index-tablet.jpg");
       width: 768px;
       height: 518px;
       padding: 0;
+      background-repeat: no-repeat;
     }
 
     @media (min-width: $desktop-width) {
-      background-image: url("../../img/back-banner.jpg");
+      background-image: url("../../img/back-index-desktop.jpg");
       width: 1200px;
       height: 518px;
       padding: 0;
+      background-repeat: no-repeat;
     }
   }
 }
@@ -78,16 +81,13 @@
 }
 
 .reason__banner {
-  padding: 90px 20px 0 20px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 70px;
 
   @media (min-width: $tablet-width) {
     width: 461px;
     height: 350px;
-    padding: 77px 164px 0 164px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 78px 370px 0 370px;
   }
 }
 

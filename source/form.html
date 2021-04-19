@@ -15,6 +15,7 @@
         <div class="nav__container">
           <ul class="nav__list">
             <li class="nav__item">
+              <!--            на главной убрать ссылку-->
               <a class="nav__link" href="index.html">
                 Главная
               </a>
@@ -34,26 +35,40 @@
                 Html academy
               </a>
             </li>
+            <li class="nav__item nav__item--logo">
+              <!--            на главной убрать ссылку-->
+              <h1 class="visually-hidden">Поиск гостиниц в городе Седона</h1>
+              <a class="page-header__logo" href="index.html">
+                <picture>
+                  <source media="(min-width: 1200px)" type="image/svg+xml" srcset="img/icon/logotype-1200.svg">
+                  <source media="(min-width: 768px)" type="image/svg+xml" srcset="img/icon/logotype-320.svg">
+                  <source media="(max-width: 767px)" type="image/svg+xml" srcset="img/icon/logotype-320.svg">
+                  <img src="img/icon/logotype-1200.svg" alt="Логотип Седона">
+                  <!--                  width="187" height="97"-->
+                </picture>
+              </a>
+            </li>
           </ul>
         </div>
       </nav>
-      <h1 class="visually-hidden">Оставьте свой отзыв</h1>
-      <a class="page-header__logo" href="index.html">
-        <img src="img/icon/logo.svg" width="101.7" height="84" alt="Логотип Седона">
-      </a>
     </header>
     <main class="page-main">
       <section class="feedback">
+        <div class="feedback__image">
+          <picture>
+            <source media="(min-width: 1200px)" type="image/svg+xml" srcset="img/icon/text-form-desktop.svg">
+            <source media="(min-width: 768px)" type="image/svg+xml" srcset="img/icon/text-form-tablet.svg">
+            <source media="(max-width: 767px)" type="image/svg+xml" srcset="img/icon/text-form-mobile.svg">
+            <img  class="feedback__banner" src="img/icon/text-form-desktop.svg" width="229" height="39" alt="Добро пожаловать в Седону">
+          </picture>
+        </div>
         <div class="feedback__container">
-          <div class="feedback__container feedback__container--image">
-            <img class="feedback__banner" src="img/icon/text-form.svg" width="229" height="39" alt="Добро пожаловать в Седону">
-          </div>
           <header class="feedback__header">
             <h3 class="feedback__title">Оставьте свой отзыв</h3>
             <p class="feedback__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </header>
           <form class="comment" method="get" action="https://echo.htmlacademy.ru/">
-            <fieldset class="comment__block">
+            <fieldset class="comment__block comment__block--second">
               <legend class="comment__title">Представьтесь:</legend>
               <ul class="comment__list">
                 <li class="comment__item">
@@ -70,20 +85,20 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="comment__block">
+            <fieldset class="comment__block comment__grid">
               <legend class="comment__title">Контактная информация:</legend>
-              <ul class="comment__list">
+              <ul class="comment__list comment__list--contacts">
                 <li class="comment__item">
                   <label class="comment__label" for="telephone">Контактный телефон*:</label>
-                  <input class="comment__input comment__input--telephone" id="telephone" name="telephone" type="text" placeholder="Введите телефон">
+                  <input class="comment__input comment__width comment__width--contacts comment__input--telephone" id="telephone" name="telephone" type="text" placeholder="Введите телефон">
                 </li>
                 <li class="comment__item">
                   <label class="comment__label" for="email">Электронная почта*:</label>
-                  <input class="comment__input comment__input--email" id="email" type="text" name="email" placeholder="Введите e-mail">
+                  <input class="comment__input comment__width comment__width--contacts comment__input--email" id="email" type="text" name="email" placeholder="Введите e-mail">
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="comment__block">
+            <fieldset class="comment__block comment__block--first">
               <legend class="comment__title">Ваше общее впечатление:</legend>
               <ul class="comment__list">
                 <li class="comment__item">
@@ -106,9 +121,9 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="comment__block">
+            <fieldset class="comment__block comment__grid">
               <legend class="comment__title">Посещенные достопримечательности:</legend>
-              <ul class="comment__list">
+              <ul class="comment__list comment__list--place">
                 <li class="comment__item">
                   <label class="comment__label comment__label--bold">
                     <input class="comment__input-checkbox" type="checkbox" name="Посещенные достопримечательности: Мост Дьявола" checked>
@@ -135,12 +150,15 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="comment__block">
+            <fieldset class="comment__block comment__grid">
               <legend class="comment__title">Опишите свои эмоции:</legend>
-              <textarea class="comment__input" name="comment" rows="5" cols="25" placeholder="Опишите подробно все свои восторги"></textarea>
+              <textarea class="comment__input comment__width comment__width--emotions" name="comment" rows="5" cols="23" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
             <div class="comment__container">
               <button type="submit" class="comment__button button">Отправить отзыв</button>
+            </div>
+            <div>
+              <p class="comment__required-field">* — обязательные поля</p>
             </div>
           </form>
         </div>

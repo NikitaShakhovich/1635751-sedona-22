@@ -56,7 +56,12 @@
       <section class="reason">
         <div class="reason__container">
           <div class="reason__container reason__container--image">
-            <img class="reason__banner" src="img/icon/text-index.svg" width="282" height="214" alt="Добро пожаловать в Седону">
+            <picture>
+              <source media="(min-width: 1200px)" type="image/svg+xml" srcset="img/icon/text-index-desktop.svg">
+              <source media="(min-width: 768px)" type="image/svg+xml" srcset="img/icon/text-index-tablet.svg">
+              <source media="(max-width: 767px)" type="image/svg+xml" srcset="img/icon/text-index-mobile.svg">
+              <img class="reason__banner" src="img/icon/text-index-desktop.svg" width="460" height="350" alt="Добро пожаловать в Седону">
+            </picture>
           </div>
           <header class="reason__header">
             <h2 class="visually-hidden">Достоинства города Седона</h2>
