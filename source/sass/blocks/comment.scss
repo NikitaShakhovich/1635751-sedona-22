@@ -138,7 +138,6 @@
 }
 
 .comment__width {
-
   &--contacts {
     @media (min-width: $tablet-width) {
       width: 100%;
@@ -151,6 +150,7 @@
       width: 258px;
     }
   }
+
   &--emotions {
     @media (min-width: $tablet-width) {
       width: 100%;
