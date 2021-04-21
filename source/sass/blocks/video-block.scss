@@ -1,15 +1,15 @@
 .video-block__container {
   margin: 0 auto;
-  width: 280px;
+  max-width: 280px;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    width: 648px;
+    max-width: 648px;
     padding: 0 60px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
+    max-width: 1200px;
     padding: 0;
   }
 }
@@ -47,7 +47,7 @@
 
 .video-block__range {
   height: 23px;
-  width: 236px;
+  max-width: 236px;
   padding-top: 22px;
   padding-left: 22px;
   padding-right: 22px;
@@ -56,13 +56,13 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 388px;
+    max-width: 388px;
     height: 47px;
     padding: 45px 166px 0 94px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 540px;
+    max-width: 540px;
     padding: 45px 166px 0 94px;
   }
 }
@@ -75,7 +75,7 @@
 }
 
 .video-block__menu {
-  width: 280px;
+  max-width: 280px;
   height: 66px;
   background-color: $greyinput;
   margin: 0 auto;
@@ -85,5 +85,3 @@
     display: none;
   }
 }
-
-

@@ -10,7 +10,7 @@
 
 .gallery__image {
   background-image: url("../../img/back-form-mobile.png");
-  width: 320px;
+  max-width: 320px;
   height: 230px;
   padding: 0;
   margin: 0 auto;
@@ -18,7 +18,7 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../../img/back-form-tablet.jpg");
-    width: 768px;
+    max-width: 768px;
     height: 346px;
     padding: 0;
     background-repeat: no-repeat;
@@ -26,7 +26,7 @@
 
   @media (min-width: $desktop-width) {
     background-image: url("../../img/back-form-desktop.jpg");
-    width: 1200px;
+    max-width: 1200px;
     height: 357px;
     padding: 0;
     background-repeat: no-repeat;
@@ -36,16 +36,16 @@
 
 .gallery__container {
   margin: 0 auto;
-  width: 280px;
+  max-width: 280px;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    width: 648px;
+    max-width: 648px;
     padding: 0 60px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
+    max-width: 1200px;
     padding: 0;
   }
 }
@@ -110,7 +110,6 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-
   }
 }
 

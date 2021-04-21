@@ -55,7 +55,7 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    width: 324px;
+    max-width: 324px;
   }
 }
 
@@ -147,7 +147,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: 258px;
+      max-width: 258px;
     }
   }
 
