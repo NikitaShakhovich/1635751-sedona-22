@@ -1,26 +1,16 @@
 .feedback__container {
   margin: 0 auto;
-  width: 280px;
-  padding: 0 20px;
+  width: 320px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    //display: flex;
-    //justify-content: space-between;
-    //flex-direction: row;
-    //flex-wrap: wrap;
-    width: 648px;
+    width: 768px;
     padding: 0 60px;
-    //margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    //display: flex;
-    //justify-content: space-between;
-    //flex-direction: row;
-    //flex-wrap: wrap;
-    width: 960px;
+    width: 1200px;
     padding: 0 120px;
-    //margin: 0 auto;
   }
 }
 
