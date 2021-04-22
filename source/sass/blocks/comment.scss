@@ -1,12 +1,82 @@
+.comment {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .comment__item {
   margin-top: 10px;
   padding: 0;
+
+  &--full-name {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .comment__block {
   padding: 0;
   margin: 0;
   border: none;
+
+
+  @media (min-width: $tablet-width) {
+    border-top: 1px solid $legend-top;
+  }
+
+  &--border-none {
+    @media (min-width: $tablet-width) {
+      border-top: none;
+    }
+  }
+}
+
+.comment__container {
+  padding: 0 20px;
+
+  &--border {
+    border-top: 1px solid $legend-top;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0 0 35px 0;
+  }
+
+  &--second {
+    @media (min-width: $tablet-width) {
+      order: -1;
+      border-left: 1px solid $legend-top;
+      border-top: none;
+      text-align: right;
+    }
+  }
+
+  &--first {
+    @media (min-width: $tablet-width) {
+      order: -2;
+      border-top: none;
+    }
+  }
+}
+
+.comment__grid {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+  }
+}
+
+.comment__flex {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .comment__title {
@@ -16,15 +86,54 @@
   text-align: center;
   text-transform: uppercase;
   margin: 0;
-  padding: 20px 19px 10px 19px;
+  padding: 20px 0 10px;
   width: 100%;
-  border-top: 1px solid $legend-top;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+  }
+}
+
+.comment__required-field {
+  display: none;
+  text-align: right;
+  color: $darkgrey;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin: 45px 0 17px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .comment__list {
   margin: 0;
-  padding: 0 19px 20px;
+  padding: 0 0 20px;
   list-style: none;
+
+  &--place {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+
+  &--contacts {
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
 }
 
 .comment__label {
@@ -36,6 +145,14 @@
   text-align: left;
   margin: 0;
   padding: 0 0 0 0;
+
+  &--full-name {
+    padding: 0 10px 0 0;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 10px 0 58px;
+    }
+  }
 
   &--bold {
     font-weight: bold;
@@ -53,24 +170,49 @@
   font-size: 18px;
   line-height: 26px;
   text-align: left;
-  margin: 0 19px;
-  padding: 15px 19px 15px 19px;
+  margin: 0;
+  padding: 15px 0 15px 15px;
   background-color: $greyinput;
   border: none;
   color: $black;
   font-family: inherit;
+  width: 100%;
+  box-sizing: border-box;
 
   &::placeholder {
     color: $black;
   }
 }
 
-.comment__container {
-  padding: 0 19px;
-  margin: 0;
+.comment__width {
+  &--contacts {
+    @media (min-width: $tablet-width) {
+      width: 100%;
+      margin: 0;
+      padding: 15px 0 15px 15px;
+      box-sizing: border-box;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 258px;
+    }
+  }
+
+  &--emotions {
+    @media (min-width: $tablet-width) {
+      width: 100%;
+      margin: 0;
+      padding: 15px 0 0 15px;
+      box-sizing: border-box;
+    }
+  }
 }
 
 .comment__button {
   margin: 30px 0 30px;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
 }

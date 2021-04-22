@@ -1,20 +1,46 @@
 .feedback__container {
   margin: 0 auto;
   width: 320px;
-  //outline: 5px solid red;
-  //outline-offset: -5px;
+  box-sizing: border-box;
 
-  &--image {
-    background-image: url("../../img/back-desktop.jpg");
-    width: 320px;
-    height: 214px;
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    padding: 0 120px;
+  }
+}
+
+.feedback__image {
+  background-image: url("../../img/back-form-mobile.png");
+  width: 320px;
+  height: 230px;
+  padding: 0;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/back-form-tablet.jpg");
+    width: 768px;
+    height: 346px;
     padding: 0;
-    outline: none;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/back-form-desktop.jpg");
+    width: 1200px;
+    height: 357px;
+    padding: 0;
+    background-repeat: no-repeat;
   }
 }
 
 .feedback__header {
-  padding: 0 19px;
+  padding: 0;
 }
 
 .feedback__title {
@@ -36,4 +62,10 @@
   text-align: center;
   margin: 0;
   padding: 0 0 25px;
+}
+
+.feedback__banner {
+  display: block;
+  margin: 0 auto;
+  padding-top: 70px;
 }

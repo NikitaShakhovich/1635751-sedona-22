@@ -12,3 +12,13 @@
   flex-direction: column;
   text-align: center;
 }
+
+.page-header__nav {
+  &--closed {
+    & .nav__container {
+      @media (max-width: $only-mobile-width) {
+        display: none;
+      }
+    }
+  }
+}

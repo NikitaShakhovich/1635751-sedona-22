@@ -8,7 +8,7 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <nav class="page-header__nav nav">
+      <nav class="page-header__nav page-header__nav--opened page-header__nav--nojs nav">
         <button class="nav__toggle">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -34,56 +34,73 @@
                 Html academy
               </a>
             </li>
+            <li class="nav__item nav__item--logo">
+              <h1 class="visually-hidden">Поиск гостиниц в городе Седона</h1>
+              <a class="page-header__logo" href="index.html">
+                <picture>
+                  <source media="(min-width: 1200px)" type="image/svg+xml" srcset="img/icon/logotype-1200.svg">
+                  <source media="(min-width: 768px)" type="image/svg+xml" srcset="img/icon/logotype-320.svg">
+                  <source media="(max-width: 767px)" type="image/svg+xml" srcset="img/icon/logotype-320.svg">
+                  <img src="img/icon/logotype-1200.svg" alt="Логотип Седона">
+                </picture>
+              </a>
+            </li>
           </ul>
         </div>
       </nav>
-      <h1 class="visually-hidden">Оставьте свой отзыв</h1>
-      <a class="page-header__logo" href="index.html">
-        <img src="img/icon/logo.svg" width="101.7" height="84" alt="Логотип Седона">
-      </a>
     </header>
     <main class="page-main">
       <section class="feedback">
+        <div class="feedback__image">
+          <picture>
+            <source media="(min-width: 1200px)" type="image/svg+xml" srcset="img/icon/text-form-desktop.svg">
+            <source media="(min-width: 768px)" type="image/svg+xml" srcset="img/icon/text-form-tablet.svg">
+            <source media="(max-width: 767px)" type="image/svg+xml" srcset="img/icon/text-form-mobile.svg">
+            <img  class="feedback__banner" src="img/icon/text-form-desktop.svg" width="229" height="39" alt="Добро пожаловать в Седону">
+          </picture>
+        </div>
         <div class="feedback__container">
-          <div class="feedback__container feedback__container--image">
-            <img class="feedback__banner" src="img/icon/text-form.svg" width="229" height="39" alt="Добро пожаловать в Седону">
-          </div>
           <header class="feedback__header">
             <h3 class="feedback__title">Оставьте свой отзыв</h3>
             <p class="feedback__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </header>
           <form class="comment" method="get" action="https://echo.htmlacademy.ru/">
-            <fieldset class="comment__block">
+            <div class="comment__container comment__container--border comment__container--second">
+              <fieldset class="comment__block comment__block--border-none">
               <legend class="comment__title">Представьтесь:</legend>
               <ul class="comment__list">
-                <li class="comment__item">
-                  <label class="comment__label" for="username">Имя*:</label>
+                <li class="comment__item comment__item--full-name">
+                  <label class="comment__label comment__label--full-name" for="username">Имя*:</label>
                   <input class="comment__input" id="username" name="username" type="text" placeholder="Петр">
                 </li>
-                <li class="comment__item">
-                  <label class="comment__label" for="secondname">Фамилия*:</label>
+                <li class="comment__item comment__item--full-name">
+                  <label class="comment__label comment__label--full-name" for="secondname">Фамилия*:</label>
                   <input class="comment__input" id="secondname" name="secondname" type="text" placeholder="Иванов">
                 </li>
-                <li class="comment__item">
-                  <label class="comment__label" for="patronymic">Отчество:</label>
+                <li class="comment__item comment__item--full-name">
+                  <label class="comment__label comment__label--full-name" for="patronymic">Отчество:</label>
                 <input class="comment__input" id="patronymic" type="text" name="patronymic" placeholder="Александрович">
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="comment__block">
+            </div>
+            <div class="comment__container comment__container--border comment__grid">
+              <fieldset class="comment__block">
               <legend class="comment__title">Контактная информация:</legend>
-              <ul class="comment__list">
+              <ul class="comment__list comment__list--contacts">
                 <li class="comment__item">
                   <label class="comment__label" for="telephone">Контактный телефон*:</label>
-                  <input class="comment__input comment__input--telephone" id="telephone" name="telephone" type="text" placeholder="Введите телефон">
+                  <input class="comment__input comment__width comment__width--contacts comment__input--telephone" id="telephone" name="telephone" type="text" placeholder="Введите телефон">
                 </li>
                 <li class="comment__item">
                   <label class="comment__label" for="email">Электронная почта*:</label>
-                  <input class="comment__input comment__input--email" id="email" type="text" name="email" placeholder="Введите e-mail">
+                  <input class="comment__input comment__width comment__width--contacts comment__input--email" id="email" type="text" name="email" placeholder="Введите e-mail">
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="comment__block">
+            </div>
+            <div class="comment__container comment__container--border comment__container--first">
+              <fieldset class="comment__block comment__block--border-none">
               <legend class="comment__title">Ваше общее впечатление:</legend>
               <ul class="comment__list">
                 <li class="comment__item">
@@ -106,41 +123,47 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="comment__block">
-              <legend class="comment__title">Посещенные достопримечательности:</legend>
-              <ul class="comment__list">
-                <li class="comment__item">
-                  <label class="comment__label comment__label--bold">
-                    <input class="comment__input-checkbox" type="checkbox" name="Посещенные достопримечательности: Мост Дьявола" checked>
-                    Мост Дьявола
-                  </label>
-                </li>
-                <li class="comment__item">
-                  <label class="comment__label comment__label--bold">
-                    <input class="comment__input-checkbox" type="checkbox" name="Посещенные достопримечательности: Гора-Колокол" checked>
-                    Гора-Колокол
-                  </label>
-                </li>
-                <li class="comment__item">
-                  <label class="comment__label comment__label--bold">
-                    <input class="comment__input-checkbox" type="checkbox" name="Посещенные достопримечательности: Слайд-парк" checked>
-                    Слайд-парк
-                  </label>
-                </li>
-                <li class="comment__item">
-                  <label class="comment__label comment__label--bold">
-                    <input class="comment__input-checkbox" type="checkbox" name="Посещенные достопримечательности: Красные скалы">
-                    Красные скалы
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="comment__block">
-              <legend class="comment__title">Опишите свои эмоции:</legend>
-              <textarea class="comment__input" name="comment" rows="5" cols="25" placeholder="Опишите подробно все свои восторги"></textarea>
-            </fieldset>
-            <div class="comment__container">
+            </div>
+            <div class="comment__container comment__container--border comment__grid">
+              <fieldset class="comment__block">
+                <legend class="comment__title">Посещенные достопримечательности:</legend>
+                <ul class="comment__list comment__list--place">
+                  <li class="comment__item">
+                    <label class="comment__label comment__label--bold">
+                      <input class="comment__input-checkbox" type="checkbox" name="Посещенные достопримечательности: Мост Дьявола" checked>
+                      Мост Дьявола
+                    </label>
+                  </li>
+                  <li class="comment__item">
+                    <label class="comment__label comment__label--bold">
+                      <input class="comment__input-checkbox" type="checkbox" name="Посещенные достопримечательности: Гора-Колокол" checked>
+                      Гора-Колокол
+                    </label>
+                  </li>
+                  <li class="comment__item">
+                    <label class="comment__label comment__label--bold">
+                      <input class="comment__input-checkbox" type="checkbox" name="Посещенные достопримечательности: Слайд-парк" checked>
+                      Слайд-парк
+                    </label>
+                  </li>
+                  <li class="comment__item">
+                    <label class="comment__label comment__label--bold">
+                      <input class="comment__input-checkbox" type="checkbox" name="Посещенные достопримечательности: Красные скалы">
+                      Красные скалы
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="comment__container comment__container--border comment__grid">
+              <fieldset class="comment__block">
+                <legend class="comment__title">Опишите свои эмоции:</legend>
+                <textarea class="comment__input comment__width comment__width--emotions" name="comment" rows="5" cols="28" placeholder="Опишите подробно все свои восторги"></textarea>
+              </fieldset>
+            <div class="comment__flex">
               <button type="submit" class="comment__button button">Отправить отзыв</button>
+              <p class="comment__required-field">* — обязательные поля</p>
+            </div>
             </div>
           </form>
         </div>
