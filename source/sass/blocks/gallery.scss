@@ -2,19 +2,33 @@
   display: block;
   margin: 0 auto;
   padding-top: 70px;
+  width: 229px;
+
+  @media (min-width: $tablet-width) {
+    width: 457px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 460px;
+  }
 }
 
 .gallery__header {
-  padding: 0;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 430px;
+    margin: 0 auto;
+  }
 }
 
 .gallery__image {
   background-image: url("../../img/back-form-mobile.png");
-  max-width: 320px;
-  height: 230px;
+  min-height: 158px;
   padding: 0;
   margin: 0 auto;
   background-repeat: no-repeat;
+  background-position: 50%, bottom;
 
   @media (min-width: $tablet-width) {
     background-image: url("../../img/back-form-tablet.jpg");
@@ -36,8 +50,8 @@
 
 .gallery__container {
   margin: 0 auto;
-  max-width: 280px;
-  padding: 0 20px;
+  max-width: 320px;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     max-width: 648px;
@@ -53,13 +67,14 @@
 .gallery__item {
   border-top: 1px solid $legend-top;
   padding-top: 22px;
+  padding-right: 20px;
+  padding-left: 20px;
 
   &:last-of-type {
     border-bottom: 1px solid $legend-top;
     padding-top: 22px;
 
     @media (min-width: $tablet-width) {
-      border: none;
       padding: 0;
     }
   }
@@ -67,6 +82,19 @@
   @media (min-width: $tablet-width) {
     border: none;
     padding: 0;
+    flex-grow: 1;
+    max-width: 324px;
+    width: 314px;
+
+    &:first-of-type {
+      width: 100%;
+      max-width: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 400px;
+    width: 394px;
   }
 }
 

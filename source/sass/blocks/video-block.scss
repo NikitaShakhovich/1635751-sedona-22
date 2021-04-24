@@ -16,6 +16,11 @@
 
 .video-block__header {
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    max-width: 450px;
+    margin: 0 auto;
+  }
 }
 
 .video-block__image {
