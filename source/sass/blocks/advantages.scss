@@ -38,7 +38,7 @@
   line-height: 26px;
   text-align: left;
   margin: 0;
-  padding: 0 0 25px;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     text-align: center;
@@ -47,7 +47,53 @@
 }
 
 .advantages__item {
+  position: relative;
+  padding: 0 0 25px 50px;
+
+  &--home {
+    &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../img/icon/icon-house.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 40px;
+    height: 37px;
+      top: 20px;
+      left: 0;
+    }
+  }
+
+  &--souvenirs {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../../img/icon/icon-gift.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      width: 40px;
+      height: 37px;
+      top: 20px;
+      left: 0;
+    }
+  }
+
+  &--food {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../../img/icon/icon-burger.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      width: 40px;
+      height: 37px;
+      top: 20px;
+      left: 0;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     height: 403px;
+    padding: 0;
   }
 }

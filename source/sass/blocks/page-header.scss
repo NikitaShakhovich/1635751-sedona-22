@@ -1,3 +1,32 @@
+.page-header__nav {
+  &--closed {
+    & .nav__toggle {
+      position: absolute;
+      display: block;
+      content: "";
+      background-image: url("../../img/icon/icon-menu.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      width: 25px;
+      height: 25px;
+      top: 17px;
+      right: 110px;
+      border: none;
+      z-index: 1;
+      background-color: $white;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .page-header__logo {
   margin: 0 auto;
   padding: 0;
@@ -18,6 +47,30 @@
     & .nav__container {
       @media (max-width: $only-mobile-width) {
         display: none;
+      }
+    }
+  }
+}
+
+.page-header__nav {
+  &--opened {
+    & .nav__toggle {
+      position: absolute;
+      display: block;
+      content: "";
+      background-image: url("../../img/icon/icon-close.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      width: 25px;
+      height: 25px;
+      top: 17px;
+      right: 110px;
+      background-color: transparent;
+      z-index: 1;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.6;
       }
     }
   }
