@@ -1,0 +1,32 @@
+.opened {
+  & .nav__item {
+    @media (max-width: $only-mobile-width) {
+      display: block;
+    }
+  }
+}
+
+.opened {
+  & .nav__toggle {
+    position: absolute;
+    display: block;
+    background-image: url("../../img/icon/icon-close.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    top: 20px;
+    right: 30px;
+    background-color: transparent;
+    z-index: 1;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}

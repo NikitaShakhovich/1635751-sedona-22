@@ -8,4 +8,19 @@
   padding: 19px 32px 13px 32px;
   border: none;
   display: block;
+
+  &:hover {
+    background: $hover;
+  }
+
+  &:active {
+    background: $active;
+  }
+
+  &:active {
+    &::before {
+      content: "";
+      opacity: 0.3;
+    }
+  }
 }

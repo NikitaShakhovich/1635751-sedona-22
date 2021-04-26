@@ -55,13 +55,21 @@
   margin: 0;
   padding: 25px 20px 35px 20px;
 
+  & br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+
   @media (min-width: $tablet-width) {
-    padding: 25px 166px 35px 166px;
+    padding: 25px 30px 35px 30px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 25px 383px 35px 383px;
+    padding: 25px 30px 35px 30px;
     line-height: 24px;
   }
 }

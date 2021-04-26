@@ -17,16 +17,12 @@
   text-align: left;
   text-transform: uppercase;
   margin: 0;
-  padding: 0 0 25px;
+  padding: 25px 0 25px;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
     text-align: center;
-    padding: 0;
-  }
-
-  &:first-of-type {
-    padding: 25px 0 25px;
+    padding: 158px 10px 40px;
   }
 }
 
@@ -43,12 +39,28 @@
   @media (min-width: $tablet-width) {
     text-align: center;
     padding: 0;
+    line-height: 21px;
   }
 }
 
 .advantages__item {
   position: relative;
   padding: 0 0 25px 50px;
+
+  @media (min-width: $tablet-width) {
+    &:nth-child(1) {
+      order: 1;
+    }
+
+    &:nth-child(2) {
+      order: 3;
+    }
+
+    &:nth-child(3) {
+      order: 2;
+    }
+  }
+
 
   &--home {
     &::before {
@@ -57,10 +69,18 @@
     background-image: url("../../img/icon/icon-house.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+    background-size: contain;
     width: 40px;
     height: 37px;
-      top: 20px;
-      left: 0;
+    top: 20px;
+    left: 0;
+
+      @media (min-width: $tablet-width) {
+        width: 80px;
+        height: 80px;
+        top: 45px;
+        left: 85px;
+      }
     }
   }
 
@@ -71,10 +91,18 @@
       background-image: url("../../img/icon/icon-gift.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
+      background-size: contain;
       width: 40px;
       height: 37px;
       top: 20px;
       left: 0;
+
+      @media (min-width: $tablet-width) {
+        width: 80px;
+        height: 80px;
+        top: 45px;
+        left: 85px;
+      }
     }
   }
 
@@ -85,15 +113,23 @@
       background-image: url("../../img/icon/icon-burger.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
+      background-size: contain;
       width: 40px;
       height: 37px;
       top: 20px;
       left: 0;
+
+      @media (min-width: $tablet-width) {
+        width: 80px;
+        height: 80px;
+        top: 45px;
+        left: 85px;
+      }
     }
   }
 
   @media (min-width: $tablet-width) {
-    height: 403px;
-    padding: 0;
+    min-height: 330px;
+    padding: 0 31px 0 31px;
   }
 }

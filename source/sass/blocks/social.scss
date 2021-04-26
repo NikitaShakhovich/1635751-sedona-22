@@ -27,6 +27,14 @@
   height: 48px;
   background: $paleblue;
 
+  &:hover {
+    background: $hover;
+  }
+
+  &:active {
+    background: $active;
+  }
+
   &--twitter {
     &::before {
       content: "";
@@ -66,7 +74,31 @@
       height: 16px;
       top: 18px;
       left: 14px;
+
     }
   }
 
+  &--youtube {
+    &:active {
+      &::before {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  &--facebook {
+    &:active {
+      &::before {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  &--twitter {
+    &:active {
+      &::before {
+        opacity: 0.3;
+      }
+    }
+  }
 }
