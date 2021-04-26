@@ -1,10 +1,31 @@
 .video-block__container {
   margin: 0 auto;
-  width: 320px;
+  max-width: 280px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 648px;
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+    padding: 0;
+  }
 }
 
 .video-block__header {
-  padding: 0 19px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+}
+
+.video-block__image {
+  display: block;
+  margin: 0 auto;
 }
 
 .video-block__slogan {
@@ -13,6 +34,11 @@
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 24px;
+  }
 }
 
 .video-block__description {
@@ -26,13 +52,24 @@
 
 .video-block__range {
   height: 23px;
-  width: 236px;
+  max-width: 236px;
   padding-top: 22px;
   padding-left: 22px;
   padding-right: 22px;
   background-color: $black;
   opacity: 0.6;
-  margin: 0 19px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 388px;
+    height: 47px;
+    padding: 45px 166px 0 94px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 540px;
+    padding: 45px 166px 0 94px;
+  }
 }
 
 .video-block__scale {
@@ -43,9 +80,13 @@
 }
 
 .video-block__menu {
-  width: 280px;
+  max-width: 280px;
   height: 66px;
   background-color: $greyinput;
-  margin: 0 19px;
+  margin: 0 auto;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
