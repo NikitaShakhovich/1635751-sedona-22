@@ -82,9 +82,7 @@
   @media (min-width: $tablet-width) {
     border: none;
     padding: 0;
-    flex-grow: 1;
-    max-width: 324px;
-    width: 314px;
+    width: 50%;
 
     &:first-of-type {
       width: 100%;
@@ -93,8 +91,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 400px;
-    width: 394px;
+    width: calc(100%/3);
   }
 }
 
