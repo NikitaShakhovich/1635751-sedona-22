@@ -9,13 +9,13 @@
   <body class="page__body">
     <header class="page-header">
       <nav class="page-header__nav opened page-header__nav--nojs nav">
-        <button class="nav__toggle">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
         <div class="nav__container">
+          <button class="nav__toggle">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="#">
+              <a class="nav__link nav__link--active" href="#">
                 Главная
               </a>
             </li>
@@ -29,7 +29,7 @@
                 Форма отзыва
               </a>
             </li>
-            <li class="nav__item">
+            <li class="nav__item nav__item--last">
               <a class="nav__link" href="#">
                 Html academy
               </a>
@@ -86,7 +86,7 @@
                 </li>
                 <li class="advantages__item advantages__item--souvenirs">
                   <h3 class="advantages__slogan">СУВЕНИРЫ</h3>
-                  <p class="advantages__description">Не только китайского, но и местного производства!</p>
+                  <p class="advantages__description">Не только китайского,<br> но и местного производства!</p>
                 </li>
                 <li class="advantages__item advantages__item--food">
                   <h3 class="advantages__slogan">ЕДА</h3>
@@ -115,7 +115,7 @@
               <div class="reason__item reason__item--color">
                 <h3 class="reason__slogan reason__slogan--border">КРАСИВАЯ ДОРОГА</h3>
                 <p class="reason__number">— №4 —</p>
-                <p class="reason__description">ЕХАТЬ В СЕДОНУ ИЗ<br> ЛАС-ВЕГАСА совсем<br> НЕ СКУЧНО!</p>
+                <p class="reason__description">ЕХАТЬ В СЕДОНУ ИЗ<br> ЛАС-ВЕГАСА совсем<br> НЕ&nbsp;СКУЧНО!</p>
               </div>
               <div class="reason__item reason__item--color">
                 <h3 class="reason__slogan reason__slogan--border">МАЛО ТУРИСТОВ</h3>
@@ -130,7 +130,7 @@
         <div  class="hotel-search__container">
           <h2 class="hotel-search__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
           <p class="hotel-search__description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <a class="hotel-search__button button" href="#">НАЙТИ гостиницу</a>
+          <a class="hotel-search__button button" href="#">НАЙТИ гостиницу</a> <!--    button--disabled кнопка отключена     -->
         </div>
       </section>
       <section class="map">
