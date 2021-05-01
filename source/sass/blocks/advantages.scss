@@ -71,22 +71,22 @@
     display: none;
 
     @media (min-width: $desktop-width) {
-    display: block;
+      display: block;
     }
   }
 
   &--home {
     &::before {
-    content: "";
-    position: absolute;
-    background-image: url("../../img/icon/icon-house.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: contain;
-    width: 40px;
-    height: 37px;
-    top: 25px;
-    left: 0;
+      content: "";
+      position: absolute;
+      background-image: url("../../img/icon/icon-house.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: contain;
+      width: 40px;
+      height: 37px;
+      top: 25px;
+      left: 0;
 
       @media (min-width: $tablet-width) {
         width: 80px;
@@ -153,4 +153,3 @@
     padding: 0 55px 0 55px;
   }
 }
-

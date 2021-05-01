@@ -12,8 +12,10 @@ $active-htmlacademy: #81b3d2;
 $button-disabled: #e5e5e5;
 $hover-nav-text: #81b3d2;
 $active-nav-alone: #766357;
-$active-nav-hover: #604E43;
-
+$active-nav-hover: #604e43;
+$active-text: rgba(255, 255, 255, 0.3);
+//GRADIENT
+$nav-last: rgba(0, 0, 0, 0.2);
 //BORDER
 $nav-border: rgba(1, 1, 1, 0.2);
 $nav-inset: rgba(255, 255, 255, 0.2);
@@ -24,5 +26,3 @@ $tablet-width: 768px;
 $desktop-width: 1200px;
 $mobile-width: 320px;
 $only-mobile-width: 767px;
-
-

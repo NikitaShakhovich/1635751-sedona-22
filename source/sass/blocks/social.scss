@@ -16,6 +16,7 @@
     margin: 0;
   }
 }
+
 .social__item {
   padding: 0 3px;
 }
@@ -47,6 +48,12 @@
       top: 16px;
       left: 14px;
     }
+
+    &:active {
+      &::before {
+        opacity: 0.3;
+      }
+    }
   }
 
   &--facebook {
@@ -61,6 +68,12 @@
       top: 16px;
       left: 18px;
     }
+
+    &:active {
+      &::before {
+        opacity: 0.3;
+      }
+    }
   }
 
   &--youtube {
@@ -74,27 +87,8 @@
       height: 16px;
       top: 18px;
       left: 14px;
-
     }
-  }
 
-  &--youtube {
-    &:active {
-      &::before {
-        opacity: 0.3;
-      }
-    }
-  }
-
-  &--facebook {
-    &:active {
-      &::before {
-        opacity: 0.3;
-      }
-    }
-  }
-
-  &--twitter {
     &:active {
       &::before {
         opacity: 0.3;
