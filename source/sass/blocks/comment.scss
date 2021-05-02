@@ -13,6 +13,14 @@
     display: flex;
     justify-content: space-between;
   }
+
+  &--radio {
+    padding: 43px 0 0 0;
+  }
+
+  &--checkbox {
+    padding: 54px 0 0 0;
+  }
 }
 
 .comment__block {
@@ -166,7 +174,7 @@
   padding: 0 0 0 0;
 
   &--full-name {
-    padding: 0 10px 0 0;
+    padding: 15px 10px 0 0;
 
     @media (min-width: $tablet-width) {
       padding: 0 10px 0 58px;
@@ -182,6 +190,47 @@
     margin: 0;
     padding: 0 0 0 0;
   }
+
+  &--telephone {
+    position: relative;
+    &:before {
+      content: "";
+      background-image: url("../../img/icon/icon-phone.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      top: 22px;
+      right: -119px;
+      position: absolute;
+      width: 58px;
+      height: 58px;
+      background-color: $background-contacts;
+    }
+  }
+  &--email {
+    position: relative;
+    &:before {
+      content: "";
+      background-image: url("../../img/icon/icon-mail.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      top: 22px;
+      right: -131px;
+      position: absolute;
+      width: 58px;
+      height: 58px;
+      background-color: $background-contacts;
+    }
+  }
+
+  &--radio {
+    position: relative;
+    padding: 0 0 0 60px;
+  }
+
+  &--checkbox {
+    position: relative;
+    padding: 0 0 0 60px;
+  }
 }
 
 .comment__input {
@@ -190,7 +239,7 @@
   line-height: 26px;
   text-align: left;
   margin: 0;
-  padding: 15px 0 15px 15px;
+  padding: 16px 0 16px 15px;
   background-color: $greyinput;
   border: none;
   color: $black;
@@ -200,6 +249,119 @@
 
   &::placeholder {
     color: $black;
+  }
+}
+
+.comment__input-radio {
+  &+.comment__label {
+    &::before {
+      content: "";
+      position: absolute;
+      height: 48px;
+      width: 48px;
+      border-radius: 50%;
+      border: 24px solid $input-rest;
+      top: -12px;
+      left: 1px;
+      box-sizing: border-box;
+    }
+
+    &:hover {
+      &::before {
+        border: 24px solid $input-nochecked-hover;
+      }
+    }
+
+    &:active {
+      &::before {
+        border: 24px solid $input-nochecked-active;
+      }
+    }
+  }
+
+  &:checked {
+    &+.comment__label {
+      &::after {
+        content: "";
+        position: absolute;
+        height: 48px;
+        width: 48px;
+        border-radius: 50%;
+        border: 15px solid $input-rest;
+        background-color: $darkgrey;
+        top: -12px;
+        left: 1px;
+        box-sizing: border-box;
+      }
+
+      &:hover {
+        &::after {
+          border: 15px solid $input-checked-hover;
+        }
+      }
+
+      &:active {
+        &::after {
+          border: 15px solid $input-checked-active;
+          background-color: $input-active-icon;
+        }
+      }
+    }
+  }
+}
+
+.comment__input-checkbox {
+  &:checked {
+    &+.comment__label {
+      &::after {
+        content: "";
+        position: absolute;
+        width: 25px;
+        height: 20px;
+        background-image: url("../../img/icon/icon-checkebox.svg");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        top: 4px;
+        left: 14px;
+      }
+
+      &:hover {
+        &::after {
+          background-color: $input-checked-hover;
+        }
+      }
+      &:active {
+        &::after {
+          background-color: $input-checked-active;
+          background-image: url("../../img/icon/icon-checkebox-active.svg");
+        }
+      }
+    }
+  }
+
+  &+.comment__label {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 46px;
+      height: 46px;
+      border-radius: 15%;
+      border: 1px solid $input-rest;
+      background-color: $input-rest;
+      top: -12px;
+      left: 1px;
+    }
+
+    &:hover {
+      &::before {
+        background-color: $input-checked-hover;
+      }
+    }
+    &:active {
+      &::before {
+        background-color: $input-checked-active;
+      }
+    }
   }
 }
 
