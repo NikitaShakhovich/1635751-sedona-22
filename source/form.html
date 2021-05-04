@@ -52,12 +52,7 @@
     <main class="page-main">
       <section class="feedback">
         <div class="feedback__image">
-          <picture>
-            <source media="(min-width: 1200px)" type="image/svg+xml" srcset="img/icon/text-form-desktop.svg">
-            <source media="(min-width: 768px)" type="image/svg+xml" srcset="img/icon/text-form-tablet.svg">
-            <source media="(max-width: 767px)" type="image/svg+xml" srcset="img/icon/text-form-mobile.svg">
-            <img  class="feedback__banner" src="img/icon/text-form-desktop.svg" alt="Добро пожаловать в Седону">
-          </picture>
+          <img class="feedback__banner" src="img/icon/text-form-desktop.svg" alt="Добро пожаловать в Седону">
         </div>
         <div class="feedback__container">
           <header class="feedback__header">
@@ -70,16 +65,16 @@
               <legend class="comment__title">Представьтесь:</legend>
               <ul class="comment__list">
                 <li class="comment__item comment__item--full-name">
-                  <label class="comment__label comment__label--full-name" for="username">Имя<sup>&lowast;</sup></sup>:</label>
-                  <input class="comment__input" id="username" name="username" type="text" placeholder="Петр">
+                  <label class="comment__label comment__label--full-name" for="username">Имя<sup>&lowast;</sup>:</label>
+                  <input class="comment__input comment__input--placeholder" id="username" name="username" type="text" placeholder="Петр">
                 </li>
                 <li class="comment__item comment__item--full-name">
                   <label class="comment__label comment__label--full-name" for="secondname">Фамилия<sup>&lowast;</sup>:</label>
-                  <input class="comment__input" id="secondname" name="secondname" type="text" placeholder="Иванов">
+                  <input class="comment__input comment__input--placeholder" id="secondname" name="secondname" type="text" placeholder="Иванов">
                 </li>
                 <li class="comment__item comment__item--full-name">
                   <label class="comment__label comment__label--full-name" for="patronymic">Отчество:</label>
-                <input class="comment__input" id="patronymic" type="text" name="patronymic" placeholder="Александрович">
+                <input class="comment__input comment__input--placeholder" id="patronymic" type="text" name="patronymic" placeholder="Александрович">
                 </li>
               </ul>
             </fieldset>
@@ -89,12 +84,13 @@
               <legend class="comment__title">Контактная информация:</legend>
               <ul class="comment__list comment__list--contacts">
                 <li class="comment__item">
-                  <label class="comment__label  comment__label--telephone" for="telephone">Контактный телефон<sup>&lowast;</sup>:</label>
-                  <input class="comment__input comment__width comment__width--contacts" id="telephone" name="telephone" type="text" placeholder="Введите телефон">
+                  <label class="comment__label  comment__label--telephone" for="telephone">
+                    <div class="comment__word-contact">Контактный&nbsp;</div>телефон<sup>&lowast;</sup>:</label>
+                  <input class="comment__input comment__input--placeholder comment__width comment__width--contacts" id="telephone" name="telephone" type="text" placeholder="Введите телефон">
                 </li>
                 <li class="comment__item">
                   <label class="comment__label comment__label--email" for="email">Электронная почта<sup>&lowast;</sup>:</label>
-                  <input class="comment__input comment__width comment__width--contacts" id="email" type="text" name="email" placeholder="Введите e-mail">
+                  <input class="comment__input comment__input--placeholder comment__width comment__width--contacts" id="email" type="text" name="email" placeholder="Введите e-mail">
                 </li>
               </ul>
             </fieldset>
@@ -144,7 +140,8 @@
             <div class="comment__container comment__container--border comment__grid">
               <fieldset class="comment__block">
                 <legend class="comment__title">Опишите свои эмоции:</legend>
-                <textarea class="comment__input comment__width comment__width--emotions" name="comment" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+                <label for="comment"></label>
+                <textarea class="comment__input comment__input--placeholder comment__width comment__width--emotions" id="comment" name="comment" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
               </fieldset>
             <div class="comment__footer">
               <button type="submit" class="comment__button button">Отправить отзыв</button>
