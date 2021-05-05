@@ -1,13 +1,51 @@
 .nav__item {
   text-align: center;
   background-color: $paleblue;
-  padding: 10px 20px 10px 20px;
+  padding: 7px 20px 7px 20px;
   display: none;
   border-top: 1px solid $nav-inset;
   border-bottom: 1px solid $nav-border;
 
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    box-shadow: none;
+    display: flex;
+    width: 18%;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    border: none;
+    flex-grow: 1;
+    align-items: stretch;
+  }
+
+  &:nth-child(1) {
+    margin-top: 25px;
+
+    @media (min-width: $tablet-width) {
+      order: 1;
+      margin: 0;
+    }
+  }
+
+  &:nth-child(2) {
+    @media (min-width: $tablet-width) {
+      order: 2;
+    }
+  }
+
+  &:nth-child(3) {
+    @media (min-width: $tablet-width) {
+      order: 4;
+    }
+  }
+
   &:nth-child(4) {
     position: relative;
+
+    @media (min-width: $tablet-width) {
+      order: 5;
+    }
   }
 
   &:nth-child(5) {
@@ -25,43 +63,16 @@
     @media (min-width: $only-mobile-width) {
       display: block;
     }
-  }
 
-  @media (min-width: $tablet-width) {
-    background-color: $white;
-    box-shadow: none;
-    display: flex;
-    width: 153px;
-    padding: 0;
-    margin: 0;
-    justify-content: center;
-    align-items: center;
-    border: none;
-
-    &:nth-child(1) {
-      order: 1;
-    }
-
-    &:nth-child(2) {
-      order: 2;
-    }
-
-    &:nth-child(3) {
-      order: 4;
-    }
-
-    &:nth-child(4) {
-      order: 5;
-    }
-
-    &:nth-child(5) {
+    @media (min-width: $tablet-width) {
       order: 3;
-      width: 156px;
+      max-width: 156px;
+      flex-grow: 1;
     }
-  }
 
-  @media (min-width: $desktop-width) {
-    width: 239px;
+    @media (min-width: $desktop-width) {
+      max-width: 244px;
+    }
   }
 
   &--logo {
@@ -125,6 +136,7 @@
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
+    flex-grow: 1;
   }
 }
 
@@ -141,6 +153,10 @@
     color: $black;
     font-size: 14px;
     line-height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
 
     &:hover {
       color: $hover-nav-text;
@@ -181,14 +197,16 @@
   background-image: url("../../img/icon/icon-menu.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
-  width: 25px;
-  height: 25px;
-  top: 15px;
-  right: 30px;
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  right: 13px;
   border: none;
   z-index: 1;
   background-color: $white;
   cursor: pointer;
+  background-size: contain;
+  padding: 0;
 
   &:hover {
     opacity: 0.6;
