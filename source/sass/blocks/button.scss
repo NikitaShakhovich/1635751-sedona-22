@@ -5,12 +5,12 @@
   text-transform: uppercase;
   color: $white;
   background-color: $paleblue;
-  padding: 19px 32px 13px 32px;
+  padding: 16px 32px 16px 32px;
   border: none;
   display: block;
 
   @media (min-width: $mobile-width) {
-    max-width: 458px;
+    max-width: 395px;
   }
 
   &:hover {
