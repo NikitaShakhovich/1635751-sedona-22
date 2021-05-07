@@ -5,7 +5,28 @@
   text-transform: uppercase;
   color: $white;
   background-color: $paleblue;
-  padding: 19px 32px 13px 32px;
+  padding: 16px 32px 16px 32px;
   border: none;
   display: block;
+
+  @media (min-width: $mobile-width) {
+    max-width: 395px;
+  }
+
+  &:hover {
+    background: $hover;
+  }
+
+  &:active {
+    background: $active;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--disabled {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: $white;
+    background: $button-disabled;
+  }
 }

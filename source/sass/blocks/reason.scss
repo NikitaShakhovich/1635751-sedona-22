@@ -8,6 +8,10 @@
   @media (min-width: $desktop-width) {
     padding: 0 358px;
   }
+
+  & .reason__description {
+    line-height: 26px;
+  }
 }
 
 .reason__list {
@@ -18,76 +22,68 @@
 
 .reason__container {
   margin: 0 auto;
-  max-width: 320px;
-
-  @media (min-width: $tablet-width) {
-    //display: flex;
-    //justify-content: space-between;
-    //flex-direction: row;
-    //flex-wrap: wrap;
-    max-width: 768px;
-    margin: 0 auto;
-  }
+  width: auto;
 
   @media (min-width: $desktop-width) {
-    //display: flex;
-    //justify-content: space-between;
-    //flex-direction: row;
-    //flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
   }
 
   &--image {
-    background-image: url("../../img/back-index-mobile.jpg");
-    max-width: 320px;
-    height: 389px;
+    background-image: url("../../img/icon/image-banner-footer.svg"), url("../../img/back-index-desktop.jpg");
+    width: auto;
+    min-height: 389px;
     padding: 0;
+    background-position: 50% 100%, 50% 29%;
     background-repeat: no-repeat;
+    background-color: $grey;
+    //background-size: auto,768px 389px;
+    //background-size: cover;
+    margin: 0 auto;
+    max-width: 1200px;
 
     @media (min-width: $tablet-width) {
-      background-image: url("../../img/back-index-tablet.jpg");
-      max-width: 768px;
-      height: 518px;
-      padding: 0;
-      background-repeat: no-repeat;
+      min-height: 518px;
     }
 
     @media (min-width: $desktop-width) {
-      background-image: url("../../img/back-index-desktop.jpg");
-      max-width: 1200px;
-      height: 518px;
-      padding: 0;
-      background-repeat: no-repeat;
+      min-height: 518px;
     }
   }
 }
 
 .reason__color {
-  background-color: $paleblue;
-  padding: 0 20px;
-  outline: none;
+  background-color: #81b3d2;
+  padding: 0 20px 0 20px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     height: 256px;
+    padding: 0 30px;
   }
 }
 
 .reason__image {
+  padding: 0;
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     height: 256px;
+    margin: 0;
   }
 }
 
 .reason__banner {
   display: block;
   margin: 0 auto;
-  padding-top: 70px;
+  width: 282px;
+  height: 214px;
+  padding-top: 89px;
 
   @media (min-width: $tablet-width) {
-    max-width: 461px;
+    width: 461px;
     height: 350px;
+    padding-top: 76px;
   }
 }
 
@@ -98,14 +94,19 @@
   text-align: center;
   text-transform: uppercase;
   margin: 0;
-  padding: 25px 0 25px;
-
-  &--border {
-    border-top: 1px solid $li-border;
-  }
+  padding: 30px 5px 30px;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
+    padding: 44px 10px 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 57px 10px 29px;
+  }
+
+  &--border {
+    border-top: 1px solid $li-border;
   }
 }
 
@@ -114,10 +115,33 @@
   text-transform: uppercase;
   font-weight: normal;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 21px;
   text-align: center;
   margin: 0;
-  padding: 0 0 25px;
+  padding: 0 0 25px 0;
+
+  &:first-of-type {
+    @media (min-width: $tablet-width) {
+      line-height: 26px;
+      padding-bottom: 55px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 41px;
+    }
+  }
+
+  & br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
 }
 
 .reason__number {
@@ -128,47 +152,127 @@
   line-height: 26px;
   text-align: center;
   margin: 0;
-  padding: 0 0 25px;
+  padding: 0 0 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 20px;
+  }
 }
 
 .reason__item {
   &--color {
     background-color: $grey;
-    padding: 0 20px;
+    padding: 0 35px 0 35px;
 
     @media (min-width: $tablet-width) {
       height: 256px;
+      padding: 0 40px;
+    }
+
+    & .reason__slogan {
+      padding: 28px 5px 5px;
+
+      @media (min-width: $tablet-width) {
+        padding: 42px 10px 9px;
+      }
+
+      @media (min-width: $desktop-width) {
+        padding: 44px 86px 9px;
+      }
     }
   }
 
   &--one {
     @media (min-width: $tablet-width) {
+      background-image: none;
       display: grid;
-      grid-template-columns: 1fr 2fr;
-      //display: flex;
-      //flex-direction: row;
-      //height: 256px;
-      //flex-wrap: wrap;
-      //min-width: 256px;
+      grid-template-columns: auto max-content;
+    }
+
+    & picture {
+      display: flex;
+    }
+
+    & .reason__color {
+      background-image: url("../../img/icon/image-header-footer.svg");
+      background-repeat: no-repeat;
+      background-size: 764px, 38px;
+      background-position: 50% -63px;
+      color: $white;
+      padding: 25px 14px 0 14px;
+
+      @media (min-width: $tablet-width) {
+        background-image: none;
+        padding: 9px 23px 10px 23px;
+      }
+
+      @media (min-width: $desktop-width) {
+        padding: 0 55px;
+      }
+
+      & .reason__number {
+        color: $white;
+      }
+
+      & .reason__description {
+        color: $white;
+        padding: 0 0 40px 0;
+      }
+
+      & .reason__slogan {
+        padding: 32px 10px 9px;
+
+        @media (min-width: $desktop-width) {
+          padding: 49px 40px 9px;
+        }
+      }
     }
   }
 
   &--two {
     @media (min-width: $tablet-width) {
       display: grid;
-      grid-template-columns: 2fr 1fr;
-      //display: flex;
-      //flex-direction: row;
-      //height: 256px;
-      //flex-wrap: wrap;
-      //min-width: 256px;
+      grid-template-columns: max-content auto;
+      color: $white;
+    }
 
-      & .reason__color {
+    & .reason__color {
+      color: $white;
+
+      @media (min-width: $tablet-width) {
         order: 2;
+        padding: 9px 35px 10px 35px;
       }
 
-      & .reason__image {
+      @media (min-width: $desktop-width) {
+        padding: 0 85px;
+      }
+    }
+
+    & .reason__image {
+      @media (min-width: $tablet-width) {
         order: 1;
+      }
+    }
+
+    & picture {
+      display: flex;
+    }
+
+    & .reason__number {
+      color: $white;
+    }
+
+    & .reason__description {
+      color: $white;
+      padding: 0 0 34px 0;
+    }
+
+    & .reason__slogan {
+      padding: 39px 10px 9px;
+
+      @media (min-width: $tablet-width) {
+        padding: 53px 40px 9px;
       }
     }
   }

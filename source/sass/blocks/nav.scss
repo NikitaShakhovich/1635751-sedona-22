@@ -1,55 +1,127 @@
 .nav__item {
   text-align: center;
   background-color: $paleblue;
-  box-shadow: 0 1px 0 $nav-border, inset 0 1px 0 $nav-inset;
-  padding: 10px 20px 10px 20px;
+  padding: 7px 20px 7px 20px;
+  display: none;
+  border-top: 1px solid $nav-inset;
+  border-bottom: 1px solid $nav-border;
 
   @media (min-width: $tablet-width) {
     background-color: $white;
     box-shadow: none;
     display: flex;
-    width: 153px;
+    width: 18%;
     padding: 0;
     margin: 0;
     justify-content: center;
-    align-items: center;
+    border: none;
+    flex-grow: 1;
+    align-items: stretch;
+  }
 
-    &:nth-child(1) {
+  &:nth-child(1) {
+    margin-top: 25px;
+
+    @media (min-width: $tablet-width) {
       order: 1;
-    }
-
-    &:nth-child(2) {
-      order: 2;
-    }
-
-    &:nth-child(3) {
-      order: 4;
-    }
-
-    &:nth-child(4) {
-      order: 5;
-    }
-
-    &:nth-child(5) {
-      order: 3;
-      width: 156px;
+      margin: 0;
     }
   }
 
-  @media (min-width: $desktop-width) {
-    width: 239px;
+  &:nth-child(2) {
+    @media (min-width: $tablet-width) {
+      order: 2;
+    }
+  }
+
+  &:nth-child(3) {
+    @media (min-width: $tablet-width) {
+      order: 4;
+    }
+  }
+
+  &:nth-child(4) {
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+      order: 5;
+    }
+  }
+
+  &:nth-child(5) {
+    height: 56px;
+
+    &:hover {
+      background: $white;
+    }
+
+    &:active {
+      background: $white;
+      opacity: 1;
+    }
+
+    @media (min-width: $only-mobile-width) {
+      display: block;
+    }
+
+    @media (min-width: $tablet-width) {
+      order: 3;
+      max-width: 156px;
+      flex-grow: 1;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 244px;
+    }
   }
 
   &--logo {
+    position: relative;
     background-color: $white;
     height: 56px;
-    padding: 0 20px 0 20px;
+    padding: 0;
     display: block;
-    box-shadow: none;
+    border: none;
+
+    @media (min-width: $only-mobile-width) {
+      &::before {
+        position: absolute;
+        top: 240px;
+        left: 87px;
+        min-width: 320px;
+      }
+    }
 
     @media (min-width: $tablet-width) {
       padding: 0;
       margin: 0;
+    }
+  }
+
+  &:hover {
+    background: $hover;
+
+    @media (min-width: $tablet-width) {
+      background: $white;
+    }
+  }
+
+  &:active {
+    background: $active;
+    color: $active-text;
+
+    @media (min-width: $tablet-width) {
+      background: $white;
+      color: $black;
+      opacity: 0.3;
+    }
+  }
+
+  &--last {
+    background-image: linear-gradient(0deg, $nav-last 0, transparent 7px);
+
+    @media (min-width: $tablet-width) {
+      background-image: none;
     }
   }
 }
@@ -64,6 +136,7 @@
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
+    flex-grow: 1;
   }
 }
 
@@ -80,33 +153,65 @@
     color: $black;
     font-size: 14px;
     line-height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+
+    &:hover {
+      color: $hover-nav-text;
+    }
+  }
+
+  &--active {
+    @media (min-width: $tablet-width) {
+      color: $active-nav-alone;
+
+      &:hover {
+        color: $active-nav-hover;
+      }
+
+      &:active {
+        color: $active-nav-alone;
+        opacity: 0.3;
+      }
+    }
   }
 }
 
 .nav__container {
   margin: 0 auto;
-  max-width: 320px;
-
-  @media (min-width: $tablet-width) {
-    //display: flex;
-    //justify-content: space-between;
-    //flex-direction: row;
-    //flex-wrap: wrap;
-    max-width: 768px;
-    margin: 0 auto;
-  }
+  width: auto;
+  position: relative;
 
   @media (min-width: $desktop-width) {
-    //display: flex;
-    //justify-content: space-between;
-    //flex-direction: row;
-    //flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
   }
 }
 
 .nav__toggle {
+  position: absolute;
+  display: block;
+  content: "";
+  background-image: url("../../img/icon/icon-menu.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  right: 13px;
+  border: none;
+  z-index: 1;
+  background-color: $white;
+  cursor: pointer;
+  background-size: contain;
+  padding: 0;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
