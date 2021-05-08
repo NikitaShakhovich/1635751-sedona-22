@@ -441,7 +441,7 @@
 }
 
 .comment__input-radio {
-  &+.comment__label {
+  & + .comment__label {
     &::before {
       content: "";
       position: absolute;
@@ -473,7 +473,7 @@
   }
 
   &:checked {
-    &+.comment__label {
+    & + .comment__label {
       &::after {
         content: "";
         position: absolute;
@@ -510,7 +510,7 @@
 
 .comment__input-checkbox {
   &:checked {
-    &+.comment__label {
+    & + .comment__label {
       &::after {
         content: "";
         position: absolute;
@@ -538,7 +538,7 @@
     }
   }
 
-  &+.comment__label {
+  & + .comment__label {
     &::before {
       content: "";
       position: absolute;

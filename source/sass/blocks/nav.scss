@@ -20,11 +20,8 @@
   }
 
   &:nth-child(1) {
-    margin-top: 25px;
-
     @media (min-width: $tablet-width) {
       order: 1;
-      margin: 0;
     }
   }
 
@@ -37,6 +34,8 @@
   &:nth-child(3) {
     @media (min-width: $tablet-width) {
       order: 4;
+      padding: 0 0 0 6px;
+      box-sizing: border-box;
     }
   }
 
@@ -195,17 +194,16 @@
   display: block;
   content: "";
   background-image: url("../../img/icon/icon-menu.svg");
-  background-position: 0 0;
+  background-position: center;
   background-repeat: no-repeat;
   width: 40px;
   height: 40px;
-  top: 10px;
-  right: 13px;
+  top: 8px;
+  right: 11px;
   border: none;
   z-index: 1;
   background-color: $white;
   cursor: pointer;
-  background-size: contain;
   padding: 0;
 
   &:hover {
