@@ -24,8 +24,14 @@
 }
 
 .video-block__image {
-  display: block;
+  background-image: url("../../img/video-desktop.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 201px;
+  width: auto;
   margin: 0 auto;
+  background-size: contain;
 }
 
 .video-block__slogan {
@@ -51,14 +57,17 @@
 }
 
 .video-block__range {
+  position: absolute;
   height: 23px;
-  max-width: 236px;
+  width: 236px;
   padding-top: 22px;
   padding-left: 22px;
   padding-right: 22px;
   background-color: $black;
   opacity: 0.6;
   margin: 0 auto;
+  bottom: 26px;
+  left: 0;
 
   @media (min-width: $tablet-width) {
     max-width: 388px;
@@ -77,16 +86,41 @@
   height: 3px;
   background-color: $white;
   opacity: 0.2;
+
+  &::after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50px;
+    border: 1px solid $white;
+    background: $white;
+    top: 19px;
+    position: absolute;
+    left: 50px;
+    opacity: 1;
+
+  }
 }
 
 .video-block__menu {
-  max-width: 280px;
+  width: 280px;
   height: 66px;
-  background-color: $greyinput;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 25px 0 25px;
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: $greyinput;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.video-block__menu-replay {
+
 }

@@ -441,7 +441,7 @@
 }
 
 .comment__input-radio {
-  &+.comment__label {
+  & + .comment__label {
     &::before {
       content: "";
       position: absolute;

@@ -185,12 +185,19 @@
   }
 }
 
+.gallery__photo-like {
+  background-image: url("../../img/icon/icon-like.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
 .gallery__photo-liked {
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: left;
+  padding: 0 0 0 34px;
 
   @media (min-width: $desktop-width) {
     color: $white;
