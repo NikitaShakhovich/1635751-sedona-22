@@ -1,10 +1,9 @@
 .video-block__container {
   margin: 0 auto;
-  max-width: 280px;
-  padding: 0 20px;
+  width: auto;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
-    max-width: 648px;
     padding: 0 60px;
   }
 
@@ -25,13 +24,18 @@
 
 .video-block__image {
   background-image: url("../../img/video-desktop.jpg");
-  background-position: 0 0;
+  background-position: center;
   background-repeat: no-repeat;
   position: relative;
   min-height: 201px;
-  width: auto;
-  margin: 0 auto;
-  background-size: contain;
+  margin: 0 auto 30px auto;
+  background-size: cover;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    min-height: 500px;
+  }
 }
 
 .video-block__slogan {
@@ -40,6 +44,7 @@
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -54,20 +59,18 @@
   font-weight: normal;
   text-align: center;
   color: $darkgrey;
+  padding: 0 20px;
 }
 
 .video-block__range {
-  position: absolute;
+  //position: absolute;
   height: 23px;
   width: 236px;
   padding-top: 22px;
   padding-left: 22px;
   padding-right: 22px;
-  background-color: $black;
-  opacity: 0.6;
+  background-color: $back-menu-player;
   margin: 0 auto;
-  bottom: 26px;
-  left: 0;
 
   @media (min-width: $tablet-width) {
     max-width: 388px;
@@ -84,21 +87,22 @@
 .video-block__scale {
   width: 100%;
   height: 3px;
-  background-color: $white;
-  opacity: 0.2;
+  background-color: $back-menu-toggle;
+}
 
-  &::after {
-    content: "";
-    width: 7px;
-    height: 7px;
-    border-radius: 50px;
-    border: 1px solid $white;
-    background: $white;
-    top: 19px;
-    position: absolute;
+.video-block__toggle {
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50px;
+  border: 1px solid $white;
+  background: $white;
+  top: 19px;
+  left: 0;
+
+  &-range {
     left: 50px;
-    opacity: 1;
-
   }
 }
 
@@ -107,9 +111,7 @@
   height: 66px;
   margin: 0 auto;
   padding: 0 25px 0 25px;
-  position: absolute;
-  left: 0;
-  bottom: -40px;
+  //position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -121,6 +123,13 @@
   }
 }
 
-.video-block__menu-replay {
+.video-block__menu-container {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 150%);
 
+  @media (min-width: $tablet-width) {
+    transform: translate(-50%, 272%);
+  }
 }
