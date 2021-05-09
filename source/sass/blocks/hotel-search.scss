@@ -4,6 +4,7 @@
   width: auto;
   text-align: center;
   box-sizing: border-box;
+  background-color: $white;
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
@@ -49,7 +50,7 @@
   padding: 21px 5px 27px 5px;
 
   @media (min-width: $tablet-width) {
-    padding: 36px 30px 35px 30px;
+    padding: 32px 30px 39px 30px;
   }
 
   @media (min-width: $desktop-width) {
