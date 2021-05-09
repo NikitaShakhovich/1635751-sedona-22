@@ -4,6 +4,7 @@
   width: auto;
   text-align: center;
   box-sizing: border-box;
+  background-color: $white;
 
   @media (min-width: $tablet-width) {
     max-width: 768px;

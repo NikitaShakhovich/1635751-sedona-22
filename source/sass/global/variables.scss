@@ -6,6 +6,7 @@ $black: #000000;
 $darkgrey: #333333;
 $greyborder: #d6d6d6;
 $greyinput: #f2f2f2;
+$background-desktop: #f2f2f2;
 $hover: #669ec0;
 $active: #5496bd;
 $active-htmlacademy: #81b3d2;
@@ -23,8 +24,10 @@ $input-nochecked-hover: #e5e5e5;
 $input-nochecked-active: #d5d5d5;
 $input-placeholder-hover: #e5e5e5;
 
-//GRADIENT
-$nav-last: rgba(0, 0, 0, 0.2);
+//GRADIENT AND SHADOW
+$nav-last-two: rgba(0, 0, 0, 0.2);
+$nav-last-one: rgba(0, 0, 0, 0);
+$shadow-desktop: rgba(0, 1, 1, 0.2);
 //BORDER
 $nav-border: rgba(1, 1, 1, 0.2);
 $nav-inset: rgba(255, 255, 255, 0.2);
