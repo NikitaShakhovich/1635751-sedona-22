@@ -5,8 +5,13 @@
   }
 }
 
+.comment__full-name {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 0 0;
+}
+
 .comment__item {
-  margin-top: 10px;
   padding: 0;
   position: relative;
 
@@ -14,20 +19,15 @@
     margin: 0;
   }
 
-  &--full-name {
-    display: flex;
-    justify-content: space-between;
-  }
-
   &--radio {
-    padding: 27px 0 6px 0;
+    padding: 37px 0 7px 0;
 
     @media (min-width: $tablet-width) {
       padding: 37px 0 16px 0;
     }
 
     &:last-of-type {
-      padding: 27px 0 14px 0;
+      padding: 35px 0 13px 0;
 
       @media (min-width: $tablet-width) {
         padding: 37px 0 15px 0;
@@ -36,15 +36,7 @@
   }
 
   &--checkbox {
-    padding: 25px 0 18px 0;
-
-    @media (min-width: $tablet-width) {
-      padding: 54px 0 34px 28px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: 10px 0 31px 38px;
-    }
+    padding: 36px 0 17px 0;
   }
 }
 
@@ -105,15 +97,9 @@
     }
 
     & .comment__input {
-      margin: 10px 0 0 0;
-
       @media (min-width: $tablet-width) {
-        margin: 21px 0 0 0;
+        //margin: 20px 0 0 0;
         padding: 12px 15px 12px 21px;
-      }
-
-      @media (min-width: $desktop-width) {
-        margin: 20px 0 0 0;
       }
     }
   }
@@ -125,7 +111,7 @@
 
       & .comment__title {
         text-align: center;
-        padding: 0 45px 35px 0;
+        padding: 0 51px 35px 0;
       }
     }
   }
@@ -180,14 +166,22 @@
   }
 
   &--place {
-    @media (min-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       padding: 50px 0 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 52px 0 52px;
     }
   }
 
   &--emotions {
-    @media (min-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       padding: 50px 0 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 53px 0 50px;
     }
   }
 }
@@ -232,19 +226,43 @@
     }
 
     & .comment__item {
-      &:nth-child(-n+2) {
+      &:nth-child(1) {
         @media (min-width: $tablet-width) {
-          padding: 8px 0 8px 29px;
+          padding: 8px 0 8px 26px;
         }
 
         @media (min-width: $desktop-width) {
-          padding: 10px 0 8px 20px;
+          padding: 8px 0 8px 0;
         }
       }
 
-      &:nth-child(1) {
+      &:nth-child(2) {
+        @media (min-width: $tablet-width) {
+          padding: 8px 0 8px 31px;
+        }
+
         @media (min-width: $desktop-width) {
-          padding: 10px 0 8px 0;
+          padding: 8px 0 8px 21px;
+        }
+      }
+
+      &:nth-child(3) {
+        @media (min-width: $tablet-width) {
+          padding: 54px 0 34px 26px;
+        }
+
+        @media (min-width: $desktop-width) {
+          padding: 7px 0 10px 38px;
+        }
+      }
+
+      &:nth-child(4) {
+        @media (min-width: $tablet-width) {
+          padding: 54px 0 34px 30px;
+        }
+
+        @media (min-width: $desktop-width) {
+          padding: 8px 0 29px 35px;
         }
       }
     }
@@ -281,14 +299,26 @@
   padding: 0 0 0 0;
 
   &--full-name {
-    padding: 27px 16px 0 0;
+    padding: 16px 16px 16px 0;
 
     @media (min-width: $tablet-width) {
-      padding: 37px 10px 0 58px;
+      padding: 16px 9px 16px 58px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 37px 10px 0 80px;
+      padding: 16px 9px 16px 80px;
+    }
+  }
+
+  &--patronymic {
+    padding: 16px 16px 16px 0;
+
+    @media (min-width: $tablet-width) {
+      padding: 16px 13px 16px 58px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 16px 13px 16px 80px;
     }
   }
 

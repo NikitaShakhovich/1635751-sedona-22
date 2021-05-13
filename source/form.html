@@ -65,17 +65,23 @@
                 <fieldset class="comment__block comment__block--border-none">
                 <legend class="comment__title">Представьтесь:</legend>
                 <ul class="comment__list">
-                  <li class="comment__item comment__item--full-name">
-                    <label class="comment__label comment__label--full-name" for="username">Имя<sup>&lowast;</sup>:</label>
+                  <li class="comment__item">
+                    <div class="comment__full-name">
+                    <label class="comment__label comment__label--full-name" for="username">Имя*:</label>
                     <input class="comment__input comment__input--placeholder" id="username" name="username" type="text" placeholder="Петр">
+                    </div>
                   </li>
-                  <li class="comment__item comment__item--full-name">
-                    <label class="comment__label comment__label--full-name" for="secondname">Фамилия<sup>&lowast;</sup>:</label>
+                  <li class="comment__item">
+                    <div class="comment__full-name">
+                    <label class="comment__label comment__label--full-name" for="secondname">Фамилия*:</label>
                     <input class="comment__input comment__input--placeholder" id="secondname" name="secondname" type="text" placeholder="Иванов">
+                    </div>
                   </li>
-                  <li class="comment__item comment__item--full-name">
-                    <label class="comment__label comment__label--full-name" for="patronymic">Отчество:</label>
-                  <input class="comment__input comment__input--placeholder" id="patronymic" type="text" name="patronymic" placeholder="Александрович">
+                  <li class="comment__item">
+                    <div class="comment__full-name">
+                    <label class="comment__label comment__label--patronymic comment__label--full-name" for="patronymic">Отчество:</label>
+                    <input class="comment__input comment__input--placeholder" id="patronymic" type="text" name="patronymic" placeholder="Александрович">
+                    </div>
                   </li>
                 </ul>
               </fieldset>
@@ -86,11 +92,11 @@
                 <ul class="comment__list comment__list--contacts">
                   <li class="comment__item">
                     <label class="comment__label  comment__label--telephone" for="telephone">
-                      <div class="comment__word-contact">Контактный&nbsp;</div>телефон<sup>&lowast;</sup>:</label>
+                      <div class="comment__word-contact">Контактный&nbsp;</div>телефон*:</label>
                     <input class="comment__input comment__input--placeholder comment__width comment__width--contacts" id="telephone" name="telephone" type="text" placeholder="Введите телефон">
                   </li>
                   <li class="comment__item">
-                    <label class="comment__label comment__label--email" for="email">Электронная почта<sup>&lowast;</sup>:</label>
+                    <label class="comment__label comment__label--email" for="email">Электронная почта*:</label>
                     <input class="comment__input comment__input--placeholder comment__width comment__width--contacts" id="email" type="text" name="email" placeholder="Введите e-mail">
                   </li>
                 </ul>

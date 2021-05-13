@@ -1,7 +1,7 @@
 .gallery__banner {
   display: block;
   margin: 0 auto;
-  padding-top: 70px;
+  padding-top: 50px;
   width: 229px;
   height: 39px;
   //width: auto;
@@ -11,13 +11,13 @@
     //min-height: 290px;
     width: 457px;
     height: 78px;
+    padding-top: 95px;
   }
 
   @media (min-width: $desktop-width) {
     width: 460px;
     height: 80px;
-    //max-width: 1200px;
-    //min-height: 301px;
+    padding-top: 101px;
   }
 }
 
@@ -48,7 +48,8 @@
   @media (min-width: $tablet-width) {
     //background-image: url("../../img/back-form-tablet.jpg");
     //max-width: 768px;
-    min-height: 346px;
+    min-height: 290px;
+    background-position: 50% 100%, 46% 78%;
     //padding: 0;
     //background-repeat: no-repeat;
   }
@@ -56,7 +57,8 @@
   @media (min-width: $desktop-width) {
     //background-image: url("../../img/back-form-desktop.jpg");
     max-width: 1200px;
-    min-height: 357px;
+    min-height: 302px;
+    background-position: 50% 100%, 46% 100%;
     //padding: 0;
     //background-repeat: no-repeat;
   }
@@ -66,6 +68,7 @@
   margin: 0 auto;
   width: auto;
   padding: 0;
+  background-color: $white;
 
   @media (min-width: $tablet-width) {
     padding: 0 60px;
@@ -105,6 +108,7 @@
 
   @media (min-width: $desktop-width) {
     width: calc(100% / 3);
+    position: relative;
   }
 }
 
@@ -114,10 +118,17 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+  padding: 31px 0 15px 0;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 24px;
+    padding: 64px 0 22px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 0 21px 0;
   }
 }
 
@@ -128,6 +139,16 @@
   text-transform: uppercase;
   text-align: center;
   color: $darkgrey;
+  padding: 13px 0 31px 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 13px 0 77px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 13px 0 80px 0;
+  }
 }
 
 .gallery__list {
@@ -149,18 +170,30 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    min-height: 267px;
+  }
+
+  &--first {
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      min-height: 400px;
+    }
   }
 }
 
 .gallery__information-photo {
-  padding: 0 0 15px 0;
+  padding: 0 0 16px 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px 0 20px;
+    padding: 0 0 0 20px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 0 0 20px;
+    }
   }
 
   &--color {
@@ -169,8 +202,11 @@
     }
 
     @media (min-width: $desktop-width) {
-      background-color: $black;
-      opacity: 0.3;
+      background-color: $back-gallery-info;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
     }
   }
 }
@@ -181,6 +217,12 @@
   font-weight: bold;
   text-transform: uppercase;
   text-align: left;
+  padding: 10px 0 0 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 16px 0 0 0;
+  }
 
   @media (min-width: $desktop-width) {
     color: $white;
@@ -194,6 +236,12 @@
   text-transform: none;
   text-align: left;
   color: $darkgrey;
+  margin: 0;
+  padding: 0 0 10px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 16px 0;
+  }
 
   @media (min-width: $desktop-width) {
     color: $white;
@@ -201,9 +249,19 @@
 }
 
 .gallery__photo-like {
-  background-image: url("../../img/icon/icon-like.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  @media (min-width: $tablet-width) {
+    padding: 2px 0 0 0;
+    width: 84px;
+  }
+}
+
+.gallery__like-icon {
+  & path {
+    @media (min-width: $desktop-width) {
+      fill: $white;
+      opacity: 1;
+    }
+  }
 }
 
 .gallery__photo-liked {
@@ -212,7 +270,11 @@
   font-weight: bold;
   text-transform: uppercase;
   text-align: left;
-  padding: 0 0 0 34px;
+  padding: 0 0 0 10px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 0 4px;
+  }
 
   @media (min-width: $desktop-width) {
     color: $white;
