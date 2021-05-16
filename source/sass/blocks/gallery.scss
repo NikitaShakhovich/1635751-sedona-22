@@ -4,11 +4,8 @@
   padding-top: 50px;
   width: 229px;
   height: 39px;
-  //width: auto;
-  //min-height: 158px;
 
   @media (min-width: $tablet-width) {
-    //min-height: 290px;
     width: 457px;
     height: 78px;
     padding-top: 95px;
@@ -31,36 +28,26 @@
 }
 
 .gallery__image {
-  //background-image: url("../../img/back-form-desktop.jpg");
-  //background-image: url("../../img/back-form-mobile.png");
   background-image: url("../../img/icon/image-banner-footer.svg"), url("../../img/back-form-desktop.jpg");
-  width: auto;
-  padding: 0;
-  background-position: 50% 100%, 46% 78%;
+  min-height: 159px;
+  background-position: 50% 100%, 50% -110px;
+  background-size: auto, 900px;
   background-repeat: no-repeat;
-  background-color: $grey;
-  //background-size: auto,768px 389px;
-  //background-size: cover;
-  margin: 0 auto;
-  max-width: 1200px;
-  min-height: 158px;
+  background-color: #eeeeee;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/icon/image-banner-footer.svg"), url("../../img/back-form-desktop@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
-    //background-image: url("../../img/back-form-tablet.jpg");
-    //max-width: 768px;
     min-height: 290px;
-    background-position: 50% 100%, 46% 78%;
-    //padding: 0;
-    //background-repeat: no-repeat;
+    background-position: 50% 100%, 50% -67px;
+    background-size: auto, 1200px;
   }
 
   @media (min-width: $desktop-width) {
-    //background-image: url("../../img/back-form-desktop.jpg");
-    max-width: 1200px;
-    min-height: 302px;
-    background-position: 50% 100%, 46% 100%;
-    //padding: 0;
-    //background-repeat: no-repeat;
+    min-height: 300px;
+    background-position: 50% 100%, 50% -56px;
   }
 }
 
@@ -165,24 +152,25 @@
 .gallery__photo {
   display: block;
   margin: 0 auto;
-  min-height: 280px;
+  max-height: 280px;
   object-fit: cover;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    min-height: 267px;
+    max-height: 267px;
   }
 
   &--first {
     @media (min-width: $tablet-width) {
       margin: 0;
-      min-height: 400px;
+      max-height: 400px;
     }
   }
 }
 
 .gallery__information-photo {
-  padding: 0 0 16px 0;
+  padding: 0 0 15px 0;
 
   @media (min-width: $tablet-width) {
     display: flex;

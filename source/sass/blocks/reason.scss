@@ -32,23 +32,25 @@
 
   &--image {
     background-image: url("../../img/icon/image-banner-footer.svg"), url("../../img/back-index-desktop.jpg");
-    width: auto;
     min-height: 389px;
-    padding: 0;
-    background-position: 50% 100%, 50% 29%;
+    background-position: 50% 100%, 50% 100%;
     background-repeat: no-repeat;
     background-color: $grey;
-    //background-size: auto,768px 389px;
-    //background-size: cover;
-    margin: 0 auto;
     max-width: 1200px;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/icon/image-banner-footer.svg"), url("../../img/back-index-desktop@2x.jpg");
+    }
 
     @media (min-width: $tablet-width) {
       min-height: 518px;
+      background-size: auto;
     }
 
     @media (min-width: $desktop-width) {
       min-height: 518px;
+      background-size: auto;
     }
   }
 }
@@ -67,6 +69,9 @@
 .reason__image {
   padding: 0;
   margin: 0 auto;
+  max-height: 260px;
+  width: 100%;
+  object-fit: cover;
 
   @media (min-width: $tablet-width) {
     height: 256px;
