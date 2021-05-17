@@ -1,9 +1,9 @@
 // global
-@import "../../node_modules/normalize.css/normalize";
+@import "../../node_modules/normalize.css/normalize.css";
 @import "global/variables.scss";
 @import "global/global.scss";
 @import "global/fonts.scss";
-
+@import "../../node_modules/webmanifest/manifest.webmanifest";
 
 // blocks
 @import "blocks/page.scss";
