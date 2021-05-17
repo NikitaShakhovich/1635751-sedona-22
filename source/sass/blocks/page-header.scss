@@ -1,13 +1,6 @@
 .page-header__logo {
   margin: 0 auto;
   padding: 0;
-
-  & .img {
-    @media (min-width: $desktop-width) {
-      height: 96px;
-      width: 187px;
-    }
-  }
 }
 
 .page-header__logo-image {

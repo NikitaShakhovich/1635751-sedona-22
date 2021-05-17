@@ -1,6 +1,6 @@
 .hotel-search__container {
   margin: 0 auto;
-  padding: 34px 20px 45px;
+  padding: 34px 20px 51px;
   width: auto;
   text-align: center;
   box-sizing: border-box;
@@ -9,11 +9,11 @@
   @media (min-width: $tablet-width) {
     max-width: 768px;
     margin: 0 auto;
-    padding: 56px 20px 55px;
+    padding: 56px 20px 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 56px 20px 64px;
+    padding: 56px 20px 67px;
     max-width: 1200px;
     margin: 0 auto;
   }

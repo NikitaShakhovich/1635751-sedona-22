@@ -1,9 +1,8 @@
 // global
-@import "../../node_modules/normalize.css/normalize.css";
+@import "../../node_modules/normalize.css/normalize";
 @import "global/variables.scss";
 @import "global/global.scss";
 @import "global/fonts.scss";
-@import "../../node_modules/webmanifest/manifest.webmanifest";
 
 // blocks
 @import "blocks/page.scss";
@@ -21,3 +20,4 @@
 @import "blocks/video-block.scss";
 @import "blocks/page-header.scss";
 @import "blocks/opened.scss";
+@import "blocks/modal.scss";
