@@ -1,7 +1,7 @@
 .advantages {
   margin: 0;
   list-style: none;
-  padding: 0 20px;
+  padding: 0 20px 34px 20px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -17,12 +17,12 @@
   text-align: left;
   text-transform: uppercase;
   margin: 0;
-  padding: 28px 0 15px;
+  padding: 10px 0 17px;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
     text-align: center;
-    padding: 44px 10px 22px;
+    padding: 18px 10px 23px;
   }
 }
 
@@ -42,38 +42,65 @@
   }
 }
 
-.advantages__item {
-  position: relative;
-  padding: 0 0 0 50px;
-  background-color: $white;
-
-  &:nth-child(3) {
-    padding-bottom: 35px;
-
-    @media (min-width: $tablet-width) {
-      padding-bottom: 33px;
-    }
-  }
+.advantages__container-text {
+  padding: 0 0 0 10px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 31px 0 31px;
-    min-height: 297px;
+    padding: 0;
+  }
+}
 
-    &:nth-child(1) {
+.advantages__item-icon {
+  width: 40px;
+  height: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 76px;
+    height: 76px;
+  }
+}
+
+.advantages__item {
+  padding: 15px 0 0 0;
+  background-color: $white;
+  display: flex;
+
+  &:nth-child(1) {
+    padding: 24px 0 0 0;
+
+    @media (min-width: $tablet-width) {
+      padding: 60px 36px 60px 36px;
       order: 1;
     }
 
-    &:nth-child(2) {
-      order: 3;
+    @media (min-width: $desktop-width) {
+      padding: 60px 46px 80px 46px;
     }
+  }
 
-    &:nth-child(3) {
+  &:nth-child(2) {
+    @media (min-width: $tablet-width) {
+      order: 3;
+      padding: 60px 32px 60px 32px;
+    }
+  }
+
+  &:nth-child(3) {
+    padding: 17px 0 0 0;
+
+    @media (min-width: $tablet-width) {
+      padding: 60px 50px 60px 50px;
       order: 2;
     }
   }
 
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: center;
+  }
+
   @media (min-width: $desktop-width) {
-    padding: 0 55px 0 55px;
+    padding: 60px 55px 80px 55px;
   }
 
   & br {
@@ -81,105 +108,6 @@
 
     @media (min-width: $desktop-width) {
       display: block;
-    }
-  }
-
-  &--home {
-    padding-top: 7px;
-
-    @media (min-width: $tablet-width) {
-      padding-top: 0;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url("../../img/icon/icon-house.svg");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      background-size: contain;
-      width: 40px;
-      height: 37px;
-      top: 25px;
-      left: 0;
-
-      @media (min-width: $tablet-width) {
-        width: 80px;
-        height: 80px;
-        margin: 32px auto 0;
-        display: block;
-        position: relative;
-      }
-    }
-
-    .advantages__slogan {
-      @media (min-width: $desktop-width) {
-        padding: 49px 10px 22px;
-      }
-    }
-  }
-
-  &--souvenirs {
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url("../../img/icon/icon-gift.svg");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      background-size: contain;
-      width: 40px;
-      height: 37px;
-      top: 18px;
-      left: 5px;
-
-      @media (min-width: $tablet-width) {
-        display: block;
-        width: 80px;
-        height: 80px;
-        margin: 36px auto 0;
-        position: relative;
-      }
-    }
-  }
-
-  &--food {
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url("../../img/icon/icon-burger.svg");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      background-size: contain;
-      width: 40px;
-      height: 37px;
-      top: 20px;
-      left: 0;
-
-      @media (min-width: $tablet-width) {
-        display: block;
-        width: 80px;
-        height: 80px;
-        margin: 40px auto 0;
-        position: relative;
-      }
-    }
-
-    & .advantages__slogan {
-      padding: 26px 0 15px;
-
-      @media (min-width: $tablet-width) {
-        padding: 37px 0 23px;
-      }
-    }
-
-    & .advantages__description {
-      @media (min-width: $tablet-width) {
-        padding: 0 20px 0 20px;
-      }
-
-      @media (min-width: $desktop-width) {
-        padding: 0;
-      }
     }
   }
 }

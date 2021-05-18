@@ -61,15 +61,13 @@
 }
 
 .page-footer__copyright-icon {
+  fill: $black;
+
   &:hover {
-    & path {
-      fill: $active-htmlacademy;
-    }
+    fill: $active-htmlacademy;
   }
 
   &:active {
-    & path {
-      opacity: 0.3;
-    }
+    opacity: 0.3;
   }
 }

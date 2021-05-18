@@ -38,35 +38,38 @@
 
   &:active {
     background-color: $active;
-  }
 
-  &--twitter {
-    background-image: url("../../img/icon/icon-twitter.svg");
-    background-position: 13px 18px;
-    background-repeat: no-repeat;
+    & .social__link-twitter {
+      opacity: 0.3;
+    }
 
-    &:active {
+    & .social__link-facebook {
+      opacity: 0.3;
+    }
+
+    & .social__link-youtube {
       opacity: 0.3;
     }
   }
+}
 
-  &--facebook {
-    background-image: url("../../img/icon/icon-facebook.svg");
-    background-position: 18px 15px;
-    background-repeat: no-repeat;
+.social__link-twitter {
+  position: absolute;
+  fill: $white;
+  top: 15px;
+  left: 13px;
+}
 
-    &:active {
-      opacity: 0.3;
-    }
-  }
+.social__link-youtube {
+  position: absolute;
+  fill: $white;
+  top: 16px;
+  left: 13px;
+}
 
-  &--youtube {
-    background-image: url("../../img/icon/icon-youtube.svg");
-    background-position: 13px 19px;
-    background-repeat: no-repeat;
-
-    &:active {
-      opacity: 0.3;
-    }
-  }
+.social__link-facebook {
+  position: absolute;
+  fill: $white;
+  top: 13px;
+  left: 17px;
 }
