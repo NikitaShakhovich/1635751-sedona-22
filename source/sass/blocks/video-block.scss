@@ -24,7 +24,7 @@
 }
 
 .video-block__image {
-  background-image: url("../../img/video-desktop.jpg");
+  background-image: url("../img/video-desktop.jpg");
   background-position: center;
   background-repeat: no-repeat;
   min-height: 201px;
@@ -33,7 +33,7 @@
   width: 320px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/video-desktop@2x.jpg");
+    background-image: url("../img/video-desktop@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
