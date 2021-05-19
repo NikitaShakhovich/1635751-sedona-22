@@ -246,8 +246,9 @@
 
 .gallery__photo-like {
   @media (min-width: $tablet-width) {
-    padding: 2px 0 0 0;
+    padding: 0;
     width: 84px;
+    display: flex;
   }
 }
 
@@ -270,7 +271,7 @@
   padding: 0 0 0 10px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 0 4px;
+    padding: 0 0 0 8px;
   }
 
   @media (min-width: $desktop-width) {
