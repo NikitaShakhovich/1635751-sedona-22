@@ -28,7 +28,7 @@
 }
 
 .gallery__image {
-  background-image: url("../../img/icon/image-banner-footer.svg"), url("../../img/back-form-desktop.jpg");
+  background-image: url("../img/icon/image-banner-footer.svg"), url("../img/back-form-desktop.jpg");
   min-height: 158px;
   background-position: 50% 100%, 50% -110px;
   background-size: auto, 900px;
@@ -36,7 +36,7 @@
   background-color: #eeeeee;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/icon/image-banner-footer.svg"), url("../../img/back-form-desktop@2x.jpg");
+    background-image: url("../img/icon/image-banner-footer.svg"), url("../img/back-form-desktop@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
@@ -246,8 +246,9 @@
 
 .gallery__photo-like {
   @media (min-width: $tablet-width) {
-    padding: 2px 0 0 0;
+    padding: 0;
     width: 84px;
+    display: flex;
   }
 }
 
@@ -270,7 +271,7 @@
   padding: 0 0 0 10px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 0 4px;
+    padding: 0 0 0 8px;
   }
 
   @media (min-width: $desktop-width) {

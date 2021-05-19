@@ -31,7 +31,7 @@
   }
 
   &--image {
-    background-image: url("../../img/icon/image-banner-footer.svg"), url("../../img/back-index-desktop.jpg");
+    background-image: url("../img/icon/image-banner-footer.svg"), url("../img/back-index-desktop.jpg");
     min-height: 389px;
     background-position: 50% 100%, 50% 100%;
     background-repeat: no-repeat;
@@ -40,7 +40,7 @@
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/icon/image-banner-footer.svg"), url("../../img/back-index-desktop@2x.jpg");
+      background-image: url("../img/icon/image-banner-footer.svg"), url("../img/back-index-desktop@2x.jpg");
     }
 
     @media (min-width: $tablet-width) {
@@ -208,7 +208,7 @@
     }
 
     & .reason__color {
-      background-image: url("../../img/icon/image-header-footer.svg");
+      background-image: url("../img/icon/image-header-footer.svg");
       background-repeat: no-repeat;
       background-size: 764px, 38px;
       background-position: 50% -63px;
